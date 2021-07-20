@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title>사회복지공동모금회 사랑의열매</title>
+
+	<link rel="stylesheet" href="/common/css/ui.base.css">
+	<link rel="stylesheet" href="/common/css/swiper.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/common/js/swiper.js"></script>
+
+	<script src="/common/js/ui.global.js"></script>
+	<script src="/common/js/ui.plugins.js"></script>
+	<script src="/common/js/ui.common.js"></script>
+    
+    <style>
+		.base-main {padding:30px}
+		.ui-codinglist .d.d4 {color:#000;}
+    </style>
+</head>
+
+<body>
+<div class="base-skip" id="baseSkip"></div>
+
+	<div class="base-wrap" id="baseWrap">
+		<header class="base-header" id="baseHeader"></header>
+		<div class="base-body" id="baseBody">
+			<main class="base-main" id="baseMain">
+				<div class="cont-tit">
+					<h2>코딩리스트</h2>
+					<div class="navg">
+						<span class="navg-home"><i class="hidden">홈</i></span>
+						<span>guide</span>
+						<span>코딩리스트</span>
+					</div>
+				</div>
+				<div class="cont-body">
+
+	                <div class="ui-codinglist" id="uiCodinglist"></div>
+
+
+				</div>
+			</main>
+		</div>
+		<footer class="base-footer" id="baseFooter"></footer>
+	</div>
+		
+	<script>
+	;(function($, win, doc, undefined) {
+		$(doc).ready(function(){
+            //필수실행
+            $plugins.common.init({
+                menuid: '00_00_00' //1depth_2depth_3depth
+            });
+
+
+			createUiCodinglist({
+				id : 'uiCodinglist',
+				url : '/common/data/codinglist.json',
+				type : 'json'
+            });
+            
+			function createUiCodinglist(opt){
+                var dataExecel;
+                
+                $plugins.uiAjax({ url: opt.url, page:false, callback: callback });
+                function callback(v){
+                    dataExecel = v;
+                    
+                    var len = dataExecel.list.length,
+                        i = 0,
+                        state, date, end, pub, id, idm, pop, modal, tab, memo, overl, dev,
+                        d1, d2, d3, d4, d5, d6, d7, d8, 
+                        r1, r2, r3, r4,
+                        d1_, d2_, d3_, d4_, d5_, d6_, d7_, d8_,
+                        c1, c2, c3, c4, c5, c6, c7, c8, 
+                        endsum = 0, delsum = 0, tstsum = 0, ingsum = 0, watsum = 0, chksum = 0, num = -1,
+                        ctg_state = [],
+                        ctg_pub = [],
+                        ctg_dev = [],
+                        ctg_date = [],
+                        ctg_end = [],
+                        ctg_mdate = [],
+                        ctg_menu = [],
+                        ctg_dev = [],
+                        cls2 = '',
+                        cls = '',
+                        root = '',
+                        depth = '',
+                        table = '';
+
+                    for (i = 0; i < len; i++) {
+                        state = dataExecel.list[i].state || ''; 		//진행상태
+                        id = dataExecel.list[i].id || '';				//화면아이디
+                        memo = dataExecel.list[i].memo || '';			//전달내용
+                        root = dataExecel.list[i].root || '';			//root		
+                        d1 = dataExecel.list[i].d1 || '';				//depth1
+                        d2 = dataExecel.list[i].d2 || '';				//depth2
+                        d3 = dataExecel.list[i].d3 || '';				//depth3
+                        d4 = dataExecel.list[i].d4 || '';				//depth4
+
+                        r1 = dataExecel.list[i].r1 || '';				//경로1
+                        r2 = dataExecel.list[i].r2 || '';				//경로2
+                        r3 = dataExecel.list[i].r3 || '';				//경로3
+                        r4 = dataExecel.list[i].r4 || '';				//경로4
+                        
+                        //빈값에 해당 경로 depth 넣기
+                        (d1 !== '') ? d1_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d1 : d1 = d1_;
+                        
+                        (dataExecel.list[i].d1 === '') ? 
+                        (d2 !== '') ? d2_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d2 : d2 = d2_ :
+                        (!!dataExecel.list[i - 1 < 0 ? 0 : i ].d2) ? d2_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d2 : d2_ = '';
+
+                        (dataExecel.list[i].d1 === '' && dataExecel.list[i].d2 === '') ?
+                        (d3 !== '') ? d3_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d3 : d3 = d3_ :
+                        (!!dataExecel.list[i - 1 < 0 ? 0 : i ].d3) ? d3_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d3 : d3_ = '';
+
+                        (dataExecel.list[i].d1 === '' && dataExecel.list[i].d3 === '') ?
+                        (d3 !== '') ? d4_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d4 : d4 = d4_ :
+                        (!!dataExecel.list[i - 1 < 0 ? 0 : i ].d4) ? d4_ = dataExecel.list[i - 1 < 0 ? 0 : i ].d4 : d4_ = '';
+  
+                        !!dataExecel.list[i].d1 ? d1 = dataExecel.list[i].d1 : '';
+                        !!dataExecel.list[i].d2 ? d2 = dataExecel.list[i].d2 : '';
+                        !!dataExecel.list[i].d3 ? d3 = dataExecel.list[i].d3 : '';
+                        !!dataExecel.list[i].d4 ? d4 = dataExecel.list[i].d4 : '';
+                        
+                        delsum = (state === "제외") ? delsum + 1 : delsum ; //제외 및 삭제됨
+                        watsum = (state === "대기") ? watsum + 1 : watsum ; //작업전
+                        ingsum = (state === "진행") ? ingsum + 1 : ingsum ; //작업중
+                        chksum = (state === "체크") ? chksum + 1 : chksum ; //기획검수(내부)
+                        tstsum = (state === "검수") ? tstsum + 1 : tstsum ;	//현업검수(외부)
+                        endsum = (state === "완료") ? endsum + 1 : endsum ;	//개발전달
+                        
+                        var x = i === 0 ? 0 : i - 1,
+                            z1 = dataExecel.list[i].d1 !== dataExecel.list[x].d1,
+                            z2 = dataExecel.list[i].d2 !== dataExecel.list[x].d2,
+                            z3 = dataExecel.list[i].d3 !== dataExecel.list[x].d3;
+                            z4 = dataExecel.list[i].d4 !== dataExecel.list[x].d4;
+                            
+                        
+                        //클래스 생성
+                        //c1 = (dataExecel.list[i].d1 !== '') ? ' c1' : '';
+                        c1 = (z1) ? ' c1' : '';
+                        c2 = (z2) ? ' c2' : '';
+                        c3 = (z3) ? ' c3' : '';
+
+                        cls2 = state === '체크' ? 'chk' : state === '진행' ? 'ing' : state === '완료' ? 'end' : state === '검수' ? 'tst' : state === '제외' ? 'del' : state === '약관' ? 'trm' : '';
+                        cls = cls2 + c1 + c2 + c3;
+                        
+
+                        if (state !== '제외' && i=== 0) {
+                            table += '<table>';
+                            table += '<caption>코딩리스트</caption>';
+                            table += '<colgroup>';
+                            table += '<col class="col1">';
+                            table += '<col class="col4">';
+                            table += '</colgroup>';
+                            table += '<colgroup>';
+                            (dataExecel.list[i].d1 !== undefined) ? table += '<col class="col8 n1">' : '';
+                            (dataExecel.list[i].d2 !== undefined) ? table += '<col class="col8 n2">' : '';
+                            (dataExecel.list[i].d3 !== undefined) ? table += '<col class="col8 n3">' : '';
+                            (dataExecel.list[i].d4 !== undefined) ? table += '<col class="col8 n3">' : '';
+    
+                            table += '</colgroup>';
+                            table += '<col class="col9">';
+                            table += '<thead>';
+                            table += '<th scope="col">'+ state +'</th>';
+                            table += '<th scope="col">'+ id +'</th>';
+                            (dataExecel.list[i].d1 !== undefined) ? table += '<th scope="col">'+ d1 +'</th>' : '';
+                            (dataExecel.list[i].d2 !== undefined) ? table += '<th scope="col">'+ d2 +'</th>' : '';
+                            (dataExecel.list[i].d3 !== undefined) ? table += '<th scope="col">'+ d3 +'</th>' : '';
+                            (dataExecel.list[i].d4 !== undefined) ? table += '<th scope="col">'+ d4 +'</th>' : '';
+                            table += '<th scope="col">'+ memo +'</th>';
+                            table += '</thead>';
+                            table += '</tbody>';
+                        }
+                        else if (state !== '제외') {
+                            table += '<tr class="'+ cls +'">';
+                            table += '<td class="state"><span>' + state + '</span></td>';
+                            table += (id !== '') ? 
+                                '<td class="id ico_pg"><span><a href="'+ root +''+ id +'.html" target="coding" >' + id + '</a></span></td>' :
+                                '<td class="id "><span></span></td>';
+
+                            (dataExecel.list[i].d1 !== undefined) ? table += '<td class="d d1"><span>' + d1 + '</span></td>' : '';
+                            (dataExecel.list[i].d2 !== undefined) ? table += '<td class="d d2"><span>' + d2 + '</span></td>' : '';
+                            (dataExecel.list[i].d3 !== undefined) ? table += '<td class="d d3"><span>' + d3 + '</span></td>' : '';
+                            (dataExecel.list[i].d4 !== undefined) ? table += '<td class="d d4"><span>' + d4 + '</span></td>' : '';
+                            
+                            (dataExecel.list[i].memo === '') ? table += '<td class="memo none"><span>' + memo + '</span></td>' : table += '<td class="memo"><span>' + memo + '</span></td>';
+                            table += '</tr>';
+                            (i === len - 1) ? table += '</tbody>' : '';
+                            (i === len - 1) ? table += '</table>' : '';
+                        }
+                        root = '';
+                    }
+                    $('#' + opt.id).html(table);
+                    table = '';
+
+                    // 통계
+                    var info = ''
+                    info += '<ul class="ui-codinglist-info">';
+                    info += '<li>진행율(완료+검수) : <span class="n_all">0</span> / <span class="total">0</span> (<span class="per0">0</span>%)</li>';
+                    info += '<li>완료 : <span class="n_end">0</span> (<span class="per1">0</span>%)</li>';
+                    info += '<li>검수 : <span class="n_tst">0</span> (<span class="per2">0</span>%)</li>';
+                    info += '<li>체크 : <span class="n_chk">0</span> (<span class="per2">0</span>%)</li>';
+                    info += '<li>진행 : <span class="n_ing">0</span> (<span class="per3">0</span>%)</li>';
+                    info += '<li>대기 : <span class="n_wat">0</span> (<span class="per4">0</span>%)</li>';
+                    info += '</ul>';
+                    $('#' + opt.id).prepend(info);
+
+                    if (!$('.ui-codinglist-info .total').data('data')) {
+                        $('.ui-codinglist-info .total').data('data', true).text(len - delsum - 1);
+                        $('.ui-codinglist-info .n_all').text(endsum + tstsum + chksum);
+                        $('.ui-codinglist-info .per0').text(((endsum + tstsum + chksum) / (len - delsum - 1) * 100).toFixed(0));
+                        $('.ui-codinglist-info .n_end').text(endsum);
+                        $('.ui-codinglist-info .per1').text((endsum / (len - delsum - 1) * 100).toFixed(0));
+                        $('.ui-codinglist-info .n_tst').text(tstsum);
+                        $('.ui-codinglist-info .per2').text((tstsum / (len - delsum - 1) * 100).toFixed(0));
+                        $('.ui-codinglist-info .n_ing').text(ingsum);
+                        $('.ui-codinglist-info .per3').text((ingsum / (len - delsum - 1) * 100).toFixed(0));
+                        $('.ui-codinglist-info .n_wat').text(watsum);
+                        $('.ui-codinglist-info .per4').text((watsum / (len - delsum - 1) * 100).toFixed(0));
+                        $('.ui-codinglist-info .n_chk').text(chksum);
+                        $('.ui-codinglist-info .per5').text((chksum / (len - delsum - 1) * 100).toFixed(0));
+                    }
+                    
+                }
+            }
+			
+			
+
+		});
+	})(jQuery, window, document);
+	</script>
+</body>
+</html>

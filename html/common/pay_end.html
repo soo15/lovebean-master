@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+	<meta name="keywords" content="사랑의 열매, 사회복지공동모금회"/>
+	<meta name="description" content=""/>
+    
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+
+    <title>사회복지공동모금회 사랑의열매</title>
+
+	<link rel="stylesheet" href="/common/css/ui.base.css">
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script src="/common/js/ui.global.js"></script>
+	<script src="/common/js/ui.plugins.js"></script>
+	<script src="/common/js/ui.common.js"></script>
+
+</head>
+
+<body>	
+	<div class="base-skip" id="baseSkip"></div>
+	<div class="base-layer" id="baseLayer"></div>
+	<div class="base-wrap" id="baseWrap">
+		<header class="base-header" id="baseHeader"></header>
+		<div class="base-body type-sub type-bg" id="baseBody">
+			<main class="base-main" id="baseMain">
+				<div class="contents-area">
+					<div class="seo-box">
+						<div class="payment-head">
+							<h2 class="payment-tit"><span class="text-line-mobile">회원님의</span>기부결제가<span class="color-type1"> 완료되었습니다.</span></h2>
+							<p class="payment-sub-text">사회복지공동모금회 기부에 참여해주셔서 대단히 감사합니다.</p>
+							<i class="icon-payment"></i>
+						</div>
+						<h2 class="table-tit">기부자 정보</h2>
+						<div class="tb-type_a mb-type">
+							<table>
+								<caption>기부자 정보 입니다.</caption>
+								<colgroup>
+									<col class="col-s">
+									<col class="col-auto">
+								</colgroup>
+								<tbody>
+								<tr>
+									<th scope="row">성명</th>
+									<td>홍길동</td>
+								</tr>
+								<tr>
+									<th scope="row">휴대폰번호</th>
+									<td>010-7777-7777</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h2 class="table-tit">기부내역 정보</h2>
+						<div class="tb-type_a mb-type">
+							<table>
+								<caption>기부내역 정보 입니다.</caption>
+								<colgroup>
+									<col class="col-s">
+									<col class="col-auto">
+								</colgroup>
+								<tbody>
+								<tr>
+									<th scope="row">기부금액</th>
+									<td class="color-type1">100,000원</td>
+								</tr>
+								<tr>
+									<th scope="row">결제일(이체일)</th>
+									<td>2019년 10월 1일</td>
+								</tr>
+								<tr>
+									<th scope="row">지불결제수단</th>
+									<td>카드결제</td>
+								</tr>
+								<tr>
+									<th scope="row">카드번호(계좌은행)</th>
+									<td>1234-1324-4567-8746</td>
+								</tr>
+								<tr>
+									<th scope="row">승인날짜</th>
+									<td>2019년 10월 1일</td>
+								</tr>
+								<tr>
+									<th scope="row">승인시간</th>
+									<td>16시 30분</td>
+								</tr>
+								<tr>
+									<th scope="row">할부기간</th>
+									<td>3개월</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="btn-area">
+							<button type="button" class="btn-base-imp">확인</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="base-footer" id="baseFooter"></footer>
+        <div class="box-wing" id="rightWing"></div>
+	</div>
+
+	<script>
+        (function($, win, doc, undefined) {
+            $(doc).ready(function(){
+
+				//필수실행
+				//메뉴는 00 부터 시작
+                $plugins.common.init({
+					menuid: '00_03_00', //1depth_2depth_3depth
+					menuType: 'footer'
+				});
+
+				$plugins.uiTab({
+					id:'uiTabAPPL03_1',
+					current:0
+				});
+
+            });
+        })(jQuery, window, document);
+	</script>
+</body>
+</html>

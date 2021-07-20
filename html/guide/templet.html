@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+	<meta name="keywords" content="사랑의 열매, 사회복지공동모금회"/>
+	<meta name="description" content=""/>
+    
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+
+    <title>사회복지공동모금회 사랑의열매</title>
+
+	<link rel="stylesheet" href="/common/css/ui.base.css">
+	<link rel="stylesheet" href="/common/css/swiper.css">
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/common/js/swiper.js"></script>
+
+	<script src="/common/js/ui.global.js"></script>
+	<script src="/common/js/ui.plugins.js"></script>
+	<script src="/common/js/ui.common.js"></script>
+	<style>
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+	.sbt {margin:20px 0 5px}
+  </style>
+</head>
+
+<body>	
+	<div class="base-skip" id="baseSkip"></div>
+	<div class="base-layer" id="baseLayer">
+
+		
+	</div>
+	<div class="base-wrap" id="baseWrap">
+		<header class="base-header" id="baseHeader"></header>
+		<div class="base-body" id="baseBody">
+			<main class="base-main" id="baseMain">
+				<article class="guide-wrap">
+					<h1>가이드</h1>
+
+					<section>
+						<h2>Button</h2>
+						<h3>기본</h3>
+						<a href="#" class="btn-base">나의 기부</a>
+						<button type="button" class="btn-base">나의 기부</button>
+
+						<a href="#" class="btn-base-imp">기부하기</a>
+						<button type="button" class="btn-base-imp">기부하기</button>
+
+						<a href="#" class="btn-base-line">기부하기</a>
+						<button type="button" class="btn-base-line">기부하기</button>
+
+						<a href="#" class="btn-base-bline">기부하기</a>
+						<button type="button" class="btn-base-bline">기부하기</button>
+
+						<h3>small</h3>
+						<a href="#" class="btn-base small">나의 기부</a>
+						<button type="button" class="btn-base small">나의 기부</button>
+
+						<a href="#" class="btn-base-imp small">기부하기</a>
+						<button type="button" class="btn-base-imp small">기부하기</button>
+
+						<a href="#" class="btn-base-line small">기부하기</a>
+						<button type="button" class="btn-base-line small">기부하기</button>
+
+						<a href="#" class="btn-base-bline small">기부하기</a>
+						<button type="button" class="btn-base-bline small">기부하기</button>
+
+						<h3>중요</h3>
+						<a href="#" class="btn-base-main">기부하기</a>
+						<button type="button" class="btn-base-main">기부하기</button>
+					</section>
+
+					<section>
+						<h2>Modal</h2>
+						<button type="button" class="btn-base" onclick="
+						$plugins.uiModal({ 
+							id:'modalSample1', 
+							link:'/modal/modalSample1.html', 
+							remove:true, 
+							openback: function() { console.log('open callback'); },
+							closeback: function(v) { console.log('close callback', v); }
+						}); ">기본모달</button>
+						<button type="button" class="btn-base" onclick="
+						$plugins.uiModal({
+							id:'modalSample2',
+							link:'/modal/modalSample_large.html',
+							remove:true,
+							openback: function() { console.log('open callback'); },
+							closeback: function(v) { console.log('close callback', v); }
+						}); ">모달(대)</button>
+						<button type="button" class="btn-base" onclick="
+						$plugins.uiModal({
+							id:'modalSample3',
+							link:'/modal/modalSample_small.html',
+							remove:true,
+							openback: function() { console.log('open callback'); },
+							closeback: function(v) { console.log('close callback', v); }
+						}); ">모달(소)</button>
+						<button type="button" class="btn-base" onclick="
+						$plugins.modal.system({
+							type :'alert',
+							btn_a: '확인',
+							cont_text: '팝업의 본문은 여기에 입력됩니다.<br>W/H 모두 컨텐츠 영역 안 센터 정렬<br>5줄이상은<br>사용이 불가합니다.<br>(비어있는 행 포함)'	,
+							confirmCallback : function(){
+								$plugins.modal.systemClose({
+									idname: 'inpId021', //포커스 갈 아이디
+									callback : function(){
+										console.log('실행');
+									}
+								});
+							}
+						}); ">alert (시스템)</button>
+						<button type="button" class="btn-base" onclick="
+						$plugins.modal.system({
+							type :'confirm',
+							btn_a: '확인',
+							btn_b: '취소',
+							cont_text: '팝업의 본문은 여기에 입력됩니다.<br>W/H 모두 컨텐츠 영역 안 센터 정렬<br>5줄이상은<br>사용이 불가합니다.<br>(비어있는 행 포함)'	,
+							confirmCallback : function(){
+								$plugins.modal.systemClose({
+									idname: 'inpId021', //포커스 갈 아이디
+									callback : function(){
+										console.log('확인 실행');
+									}
+								});
+							},
+							cancelCallback : function(){
+								$plugins.modal.systemClose({
+									callback : function(){
+										console.log('취소 실행');
+									}
+								});
+							}
+						}); ">confirm (시스템)</button>
+						<input type="text" class="inp-base ui-inpcancel" id="inpId021" value="입력값">
+					</section>
+
+					<section>
+						<h2>Slider</h2>
+						<!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">Slide 1</div>
+								<div class="swiper-slide">Slide 2</div>
+								<div class="swiper-slide">Slide 3</div>
+								<div class="swiper-slide">Slide 4</div>
+								<div class="swiper-slide">Slide 5</div>
+								<div class="swiper-slide">Slide 6</div>
+								<div class="swiper-slide">Slide 7</div>
+								<div class="swiper-slide">Slide 8</div>
+								<div class="swiper-slide">Slide 9</div>
+								<div class="swiper-slide">Slide 10</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							<button type="button" class="btn-swiper-prev">
+								<span class="hide">이전</span>
+							</button>
+							<button type="button" class="btn-swiper-next">
+								<span class="hide">다음</span>
+							</button>
+						</div>
+					</section>
+
+					<section>
+						<h2>Tab</h2>
+						<div class="ui-tab" id="uiTabguide1">
+							<div class="ui-tab-btns" btn-id="uiTabguide1">
+								<button type="button" class="ui-tab-btn"><i>탭1</i></button>
+								<button type="button" class="ui-tab-btn"><i>탭2</i></button>
+								<button type="button" class="ui-tab-btn"><i>탭3</i></button>
+							</div>
+							<div class="ui-tab-pnls" pnl-id="uiTabguide1">
+								<section class="ui-tab-pnl">
+									<h1 class="ui-tab-tit">탭1</h1>
+									<p>탭1 content</p>
+									<a href="#">더보기</a>
+
+									<div class="ui-tab" id="uiTabguide2">
+										<div class="ui-tab-btns" btn-id="uiTabguide2">
+											<button type="button" class="ui-tab-btn"><i>탭1-1</i></button>
+											<button type="button" class="ui-tab-btn"><i>탭1-2</i></button>
+										</div>
+										<div class="ui-tab-pnls" pnl-id="uiTabguide2">
+											<section class="ui-tab-pnl">
+												<h1 class="ui-tab-tit">탭1-1</h1>
+												<p>탭1-1 content</p>
+												<a href="#">더보기</a>
+											</section>
+											<section class="ui-tab-pnl">
+												<h1 class="ui-tab-tit">탭1-2</h1>
+												<p>탭1-2 content</p>
+												<a href="#">더보기</a>
+											</section>
+										</div>
+									</div>
+								</section>
+								<section class="ui-tab-pnl">
+									<h1 class="ui-tab-tit">탭2</h1>
+									<p>탭2 content</p>
+									<a href="#">더보기</a>
+								</section>
+								<section class="ui-tab-pnl">
+									<h1 class="ui-tab-tit">탭3</h1>
+									<p>탭3 content</p>
+									<a href="#">더보기</a>
+								</section>
+							</div>
+						</div>
+
+                        <p class="sbt">Tab(page link)</p>
+                        <div class="page-tab">
+                            <div class="tab-col"><a href="" class="tab-col-item"><i>소개</i></a></div>
+                            <div class="tab-col"><a href="" class="tab-col-item active"><i>연구자료</i></a></div>
+                        </div>
+					</section>
+
+					<section>
+						<h2>accordion</h2>
+						<div class="ui-acco" role="group" id="uiAccoguide1">
+							<dl class="ui-acco-wrap">
+								<dt class="ui-acco-tit">
+									<button type="button" class="ui-acco-btn">아코디언이란? <span class="ui-acco-arrow"></span></button>
+								</dt>
+								<dd class="ui-acco-pnl">
+									<p>(accordion, 독일어: <a href="#">Akkodeon</a>, 프랑스어: <a href="#">accordéon</a>, 이탈리아어: <a href="#">fisarmonica</a>, 문화어:손풍금)은 바람통과 리드가 달린 상자형의 악기로, 악기학상으로는 리드 오르간의 일종으로 분류된다.</p>
+								</dd>
+							</dl>
+							<dl class="ui-acco-wrap">
+								<dt class="ui-acco-tit">
+									<button type="button" class="ui-acco-btn">아코디언 연주법<span class="ui-acco-arrow">열기</span></button>
+								</dt>
+								<dd class="ui-acco-pnl">
+									<p><a href="#">풀무(bellows)</a>로 압축공기를 만들며 금속제의 리드로 발음한다. 이 바람통은 주름상자식이며 연주자는 악기를 밴드로 어깨에 메어 가슴에 안고 주로 왼손으로 바람통을 신축(伸縮)하여서 풀무역할을 시킨다. 리드로 가는 통풍조작은 연주자의 오른손이 닿으며 풀무 옆에 있는 피아노식 건반과 왼손의 단추로 한다. 이러한 방식으로 된 것을 피아노식 아코디언이라고 한다. 오른손의 다섯손가락으로 연주하는 건반은 표준 대형악기로 바음으로부터 가3음까지의 41건이나 실음의 음역은 스톱의 사용으로 고저(高低)로 다시 1옥타브씩 넓어진다. 스톱은 바람통의 양쪽에 있어 단추식과 건반식이 있다.</p>
+									<p class="mgt-m">왼손은 바람통을 움직이면서 동시에 엄지손가락 이외의 네 손가락으로 <a href="#">베이스</a>라고 하는 낮은음이나 반주화음의 단추를 조작한다. 단추의 수효는 보통 120개로 6줄로 되어 있으며, 가락과 함께 각 조의 화음이 쉽게 연주되도록 특수한 배열을 하고 있다. 휴대하기에 편리하며 화음반주가 되고, <a href="#">리드 오르간</a>과 같이 풀무는 족답식이 아니어서 셈여림에 의한 미묘한 표현이 가능한 것 등 많은 장점이 있어 대중적인 악기로 보급되어 있으나 예술음악에서는 거의 쓰지 않고 있다. 피아노식 외에 단추식이 있다.</p>
+								</dd>
+							</dl>
+							<dl class="ui-acco-wrap">
+								<dt class="ui-acco-tit">
+									<button type="button" class="ui-acco-btn">아코디언 역사 <span class="ui-acco-arrow">열기</span></button>
+								</dt>
+								<dd class="ui-acco-pnl">
+									<p>1822년 독일의 프리드리히 부시만(Friedirch Buschmann)이 발명한 것을 첫 아코디언으로 보는 것이 일반적이다. 당초의 아코디언은 온음계식(全音階式)이어서 반음계를 연주할 수 없었고, 이에 따라 연주도 간단하였다. 피아노식은 19세기 후반에 제작되었고 그 뒤 세계적으로 피아노식이 쓰이고 있다.</p>
+								</dd>
+							</dl>
+						</div>
+					</section>
+
+					<section>
+						<h2>Form</h2>
+						<h3>Input</h3>
+						<p class="sbt">basic type</p>
+						<input type="text" class="inp-base ui-inpcancel" id="inpId001" value="입력값"> <br><br>
+						<p class="sbt">basic placeholder type</p>
+						<input type="text" class="inp-base ui-inpcancel" id="inpId002" value="" placeholder="입력값" > <br><br>
+						<p class="sbt">basic disabled type</p>
+						<input type="text" class="inp-base ui-inpcancel" id="inpId003" value="입력값" disabled>
+						<p class="sbt">error</p>
+						<input type="text" class="inp-base ui-inpcancel error" id="inpId004" value="입력값"> <br><br>
+						<p class="sbt">success</p>
+						<input type="text" class="inp-base ui-inpcancel success" id="inpId005" value="입력값"> <br><br>
+
+						<h3>Textarea</h3>
+						<textarea class="inp-base" name="" id="" cols="30" rows="10" placeholder="입력값"></textarea>
+						<textarea class="inp-base" name="" id="" cols="30" rows="10" placeholder="입력값" disabled>입력된 값</textarea>
+
+						<h3>Select</h3>
+						<div class="ui-select" style="width:150px;">
+							<select id="selectID_1">
+								<option selected="selected">select</option>
+								<option>select1</option>
+								<option>select2</option>
+								<option>select3</option>
+								<option>select4</option>
+								<option>select5</option>
+								<option>select6</option>
+								<option>select7</option>
+							</select>
+						</div>
+                        <div class="ui-select" style="width:160px;">
+                            <select id="selectID_2">
+                                <option selected="selected">select</option>
+                                <option>select1</option>
+                                <option>select2</option>
+                            </select>
+                        </div>
+						<div class="ui-select" style="width:160px;">
+                            <select id="selectID_3" disabled>
+                                <option selected="selected">select</option>
+                                <option>select1</option>
+                                <option>select2</option>
+                            </select>
+                        </div>
+
+						<h3>checkbox</h3>
+						<p class="sbt">basic type</p>
+						<div class="chk-group">
+							<span class="checkbox">
+								<input type="checkbox" name="" id="check1111">
+								<label for="check1111"><span>체크박스</span></label>
+							</span>
+							<span class="checkbox">
+								<input type="checkbox" name="" id="check1112" checked>
+								<label for="check1112"><span>체크박스</span></label>
+							</span>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">disabled</p>
+						<div class="chk-group">
+							<span class="checkbox">
+								<input type="checkbox" name="" id="check2222" disabled>
+								<label for="check2222"><span>체크박스 비활성</span></label>
+							</span>
+							<span class="checkbox">
+								<input type="checkbox" name="" id="check2223" disabled checked>
+								<label for="check2223"><span>체크박스</span></label>
+							</span>
+						</div>
+
+						<h3>radio</h3>
+						<p class="sbt">basic type</p>
+						<div class="radio-group">
+							<span class="radio">
+								<input type="radio" name="radio-chk" id="radio">
+								<label for="radio"><span>라디오1</span></label>
+							</span>
+							<span class="radio">
+								<input type="radio" name="radio-chk" id="radio2">
+								<label for="radio2"><span>라디오2</span></label>
+							</span>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">disabled</p>
+						<div class="radio-group">
+							<span class="radio">
+								<input type="radio" name="radio-chk1" id="radio12" disabled checked>
+								<label for="radio12"><span>라디오1</span></label>
+							</span>
+							<span class="radio">
+								<input type="radio" name="radio-chk1" id="radio13" disabled>
+								<label for="radio13"><span>라디오2</span></label>
+							</span>
+						</div>
+					</section>
+
+					<section>
+						<h2>Table</h2>
+						<p class="sbt">Table type1</p>
+						<div class="tb-type_b">
+							<table>
+								<caption>
+									<p class="ui-caption"></p>
+								</caption>
+								<colgroup>
+									<col class="col-auto">
+									<col class="col-auto">
+									<col class="col-auto">
+									<col class="col-auto">
+									<col class="col-auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">Title01</th>
+										<th scope="col">Title02</th>
+										<th scope="col">Title03</th>
+										<th scope="col">Title04</th>
+										<th scope="col">Title05</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>본문이 한줄 일경우</td>
+										<td>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파</td>
+									</tr>
+									<tr>
+										<td>본문이<br>두줄 일경우</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+									</tr>
+									<tr>
+										<td>본문이<br>세줄<br>일경우</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+										<td>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파<br>가나다라마바사아자차카타파</td>
+									</tr>
+									<tr>
+										<td class="align-l">
+											<input type="text" class="inp-base ui-inpcancel" id="inpId001" value="입력값">
+										</td>
+										<td colspan="4" class="align-l">
+											<div class="ui-select">
+												<select class="sel_type" id="adafafd">
+													<option selected="selected">select</option>
+													<option>select</option>
+													<option>select</option>
+													<option>select</option>
+													<option>select</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5" class="align-l">
+											<textarea class="inp-base" name="" id="" cols="30" rows="10" placeholder="입력값"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">Table type2</p>
+						<div class="tb-type_a mb-type">
+							<table>
+								<colgroup>
+									<col class="col-xs">
+									<col class="col-auto">
+								</colgroup>
+								<tbody>
+								<tr>
+									<th>Title01</th>
+									<td>본문이 한줄 일경우</td>
+								</tr>
+								<tr>
+									<th>Title02</th>
+									<td>본문이 두줄 일경우<br>본문이 두줄 이상 일 경우</td>
+								</tr>
+								<tr>
+									<th>Title03</th>
+									<td>본문이 세줄 이상 일 경우<br>본문이 세줄 이상 일 경우<br>본문이 세줄 이상 일 경우</td>
+								</tr>
+								<tr>
+									<th>Input</th>
+									<td>
+										<input type="text" class="inp-base ui-inpcancel" placeholder="Input">
+									</td>
+								</tr>
+								<tr>
+									<th>Input + Text</th>
+									<td>
+										<input type="text" class="inp-base ui-inpcancel" placeholder="Input">
+										<p class="in-txt-desc">Text는 Input 아래에 위치합니다.</p>
+									</td>
+								</tr>
+								<tr>
+									<th>Check Box</th>
+									<td>
+										<div class="chk-group">
+											<span class="checkbox">
+												<input type="checkbox" name="" id="check2111">
+												<label for="check2111"><span>체크박스</span></label>
+											</span>
+											<span class="checkbox">
+												<input type="checkbox" name="" id="check2112" checked>
+												<label for="check2112"><span>체크박스</span></label>
+											</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>Radio Box</th>
+									<td>
+										<div class="radio-group">
+											<span class="radio">
+												<input type="radio" name="radio-chk231" id="radio33444">
+												<label for="radio33444"><span>라디오1</span></label>
+											</span>
+											<span class="radio">
+												<input type="radio" name="radio-chk231" id="radio33445">
+												<label for="radio33445"><span>라디오2</span></label>
+											</span>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<th>타이틀</th>
+									<td>
+										<div class="ui-select" style="width:200px">
+											<select class="sel_type" id="adafafd23">
+												<option selected="selected">select</option>
+												<option>select1</option>
+												<option>select2</option>
+												<option>select3</option>
+												<option>select4</option>
+												<option>select5</option>
+												<option>select6</option>
+												<option>select7</option>
+												<option>select8</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>Text Feilds</th>
+									<td><textarea class="inp-base" name="" id="" cols="30" rows="10" placeholder="입력값"></textarea></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">Table type3 (mobile : not-thead)</p>
+						<div class="tb-type_b not-head">
+							<table>
+								<caption>
+									<p class="ui-caption">번호, 구분, 제목, 등록자, 등록일, 조회수 정보입니다.</p>
+								</caption>
+								<colgroup>
+									<col style="width:9.3%">
+									<col style="width:11%">
+									<col style="width:auto">
+									<col style="width:11%">
+									<col style="width:11%">
+									<col style="width:9.3%">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">구분</th>
+									<th scope="col">제목</th>
+									<th scope="col">등록자</th>
+									<th scope="col">등록일</th>
+									<th scope="col">조회수</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="th-number">37</td>
+									<td class="th-type">지원공지</td>
+									<td class="th-title txt-left"><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내</a></td>
+									<td class="th-write">모금회</td>
+									<td class="th-day">2016-12-01</td>
+									<td class="th-count">37</td>
+								</tr>
+								<tr>
+									<td class="th-number">37</td>
+									<td class="th-type">지원공지</td>
+									<td class="th-title txt-left"><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내</a></td>
+									<td class="th-write">모금회</td>
+									<td class="th-day">2016-12-01</td>
+									<td class="th-count">37</td>
+								</tr>
+								<tr>
+									<td class="th-number">37</td>
+									<td class="th-type">지원공지</td>
+									<td class="th-title txt-left"><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내</a></td>
+									<td class="th-write">모금회</td>
+									<td class="th-day">2016-12-01</td>
+									<td class="th-count">37</td>
+								</tr>
+								<tr>
+									<td class="th-number">37</td>
+									<td class="th-type">지원공지</td>
+									<td class="th-title txt-left"><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내</a></td>
+									<td class="th-write">모금회</td>
+									<td class="th-day">2016-12-01</td>
+									<td class="th-count">37</td>
+								</tr>
+								<tr>
+									<td class="th-number">37</td>
+									<td class="th-type">지원공지</td>
+									<td class="th-title txt-left"><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내 2019년 KSD공모사업 서류심사 결과 안내</a></td>
+									<td class="th-write">모금회</td>
+									<td class="th-day">2016-12-01</td>
+									<td class="th-count">37</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">Table type4</p>
+						<div class="tb-type_d">
+							<div class="wide-scroll">
+								<table>
+									<caption>요약재무상태표 정보</caption>
+									<colgroup>
+										<col style="width:100px">
+										<col style="width:130px">
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+									<tr>
+										<th scope="col" colspan="2">구분</th>
+										<th scope="col">2014년</th>
+										<th scope="col">2015년</th>
+										<th scope="col">2016년</th>
+										<th scope="col">2017년</th>
+										<th scope="col">2018년</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<th scope="rowgroup" rowspan="2">자산</th>
+										<th scope="row" class="sub_th">유동자산</th>
+										<td>639,235,957,961</td>
+										<td>520,011,220,354</td>
+										<td>526,807,292,604</td>
+										<td>552,535,203,962</td>
+										<td>559,477,421,732</td>
+									</tr>
+									<tr>
+										<th scope="row" class="sub_th">고정자산</th>
+										<td>36,197,239,898</td>
+										<td>55,473,202,609</td>
+										<td>56,732,338,945</td>
+										<td>46,500,924,062</td>
+										<td>75,466,518,439</td>
+									</tr>
+									<tr class="total">
+										<th scope="row" colspan="2">자산총계</th>
+										<td>675,433,197,859</td>
+										<td>575,484,422,963</td>
+										<td>583,539,631,549</td>
+										<td>599,036,128,024</td>
+										<td>634,943,940,171</td>
+									</tr>
+									<tr>
+										<th scope="rowgroup" rowspan="2">부채</th>
+										<th scope="row" class="sub_th">유동부채</th>
+										<td>1,910,787,479</td>
+										<td>2,761,133,293</td>
+										<td>8,504,833,985</td>
+										<td>3,552,934,930</td>
+										<td>3,568,720,071</td>
+									</tr>
+									<tr>
+										<th scope="row" class="sub_th">고정부채</th>
+										<td>12,415,846,009</td>
+										<td>10,365,819,017</td>
+										<td>7,453,274,440</td>
+										<td>7,719,994,482</td>
+										<td>8,884,212,981</td>
+									</tr>
+									<tr class="total">
+										<th scope="row" colspan="2">부채총계</th>
+										<td>14,326,633,488</td>
+										<td>13,126,952,310</td>
+										<td>15,958,108,425</td>
+										<td>11,272,929,412</td>
+										<td>12,452,933,052</td>
+									</tr>
+									<tr>
+										<th scope="rowgroup" rowspan="2">자본</th>
+										<th scope="row" class="sub_th">기본재산</th>
+										<td>50,842,278,644</td>
+										<td>50,842,278,644</td>
+										<td>50,842,278,644</td>
+										<td>50,842,278,644</td>
+										<td>50,842,278,644</td>
+									</tr>
+									<tr>
+										<th scope="row" class="sub_th">기타</th>
+										<td>610,264,285,727</td>
+										<td>511,515,192,009</td>
+										<td>516,739,244,480</td>
+										<td>536,920,919,968</td>
+										<td>571,648,728,475</td>
+									</tr>
+									<tr class="total">
+										<th scope="row" colspan="2">자본총계</th>
+										<td>661,106,564,371</td>
+										<td>562,357,470,653</td>
+										<td>567,581,523,124</td>
+										<td>587,763,198,612</td>
+										<td>622,491,007,119</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">view</p>
+						<div class="view-box">
+							<div class="view-header">
+								<div class="view-header-top">
+									<p class="view-header-title">2019년 KSD공모사업 서류심사 결과 안내 </p>
+									<span class="view-header-item"><strong>등록일</strong>2019-08-12</span>
+									<span class="view-header-item"><strong>조회수</strong>479</span>
+								</div>
+								<div class="view-header-info">
+									<span class="view-header-item"><strong>등록자</strong>모금회</span>
+									<div class="view-header-btn">
+										<button type="button" class="btn-base-bline small">프린트</button>
+									</div>
+								</div>
+							</div>
+							<div class="view-contents">
+								<p>
+									<2019년 KSD나눔재단 공모사업 서류심사 결과 및 면접심사 안내><br><br>
+									2019년 KSD나눔재단​ 공모사업에 참여해주신 기관에 깊은 감사를 드립니다.<br><br>
+									이번 공모사업에는 총44건(장애인분야 27건, 아동청소년분야 10건, 쉼터청년 분야 7건)의 사업이 접수되었으며,<br>
+									총 6명의 전문심사위원단의 예비심사와 서류심사를 거쳐 최종 9개의 기관이 면접심사 대상으로 선정되었음을 알려드립니다.<br><br>
+									안타깝게도 면접심사에 포함되지 못한 35개 기관에 죄송한 마음을 전합니다.
+								</p>
+								<div class="attach-area">
+									<dl class="attach-box">
+										<dt class="attach-box-tit">첨부파일</dt>
+										<dd class="attach-box-content">
+											<button class="attach-item" type="button"><i class="ico-file"></i>file1.pdf</button>
+											<button class="attach-item" type="button"><i class="ico-file"></i>file2.pdf</button>
+											<button class="attach-item" type="button"><i class="ico-file"></i>file3.pdf</button>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">갤러리</p>
+						<div class="gallery-list">
+							<ul>
+								<li>
+									<a href="#" class="gallery-link">
+										<div class="gallery-img"><img src="/common/img/contents/donation-ex/donation-ex10_01.png" alt=""></div>
+										<p class="gallery-tit"><b>착한가정_<br>박수홍 지인숙 여사</b></p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="gallery-link">
+										<div class="gallery-img"><img src="/common/img/contents/donation-ex/donation-ex10_02.jpg" alt=""></div>
+										<p class="gallery-tit"><b>착한가정_<br>조빈 반려견 다온이</b></p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="gallery-link">
+										<div class="gallery-img"><img src="/common/img/contents/donation-ex/donation-ex10_03.png" alt=""></div>
+										<p class="gallery-tit"><b>착한가정_<br>충북 100호 착한가정 재윤이네</b></p>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="gallery-link">
+										<div class="gallery-img"><img src="/common/img/contents/donation-ex/donation-ex10_04.png" alt=""></div>
+										<p class="gallery-tit"><b>착한가정_<br>현영</b></p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<p class="sbt" style="margin-top:20px">펀딩 리스트</p>
+						<ul class="list-funding">
+							<li class="funding-item">
+								<a href="" class="link-funding">
+									<div class="funding-img"><img src="/common/img/main/@img.png" alt=""></div>
+									<div class="funding-info">
+										<p class="funding-title">상처많은 제 친구들도 행복해질 수 있을까요?</p>
+										<div class="donate-point">
+											<strong class="percent">73%</strong>
+											<div class="bar-wrap">
+												<div class="bar" style="width:73%"></div>
+											</div>
+											<div class="fl-wrap">
+												<div class="fl-item-l">
+													<b>3,567,000원</b> 기부
+												</div>
+												<div class="fl-item-r">
+													5,000,000원 목표
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="funding-item">
+								<a href="" class="link-funding">
+									<div class="funding-img"><img src="/common/img/main/@img.png" alt=""></div>
+									<div class="funding-info">
+										<p class="funding-title">상처많은 제 친구들도 행복해질 수 있을까요?</p>
+										<div class="donate-point">
+											<strong class="percent">73%</strong>
+											<div class="bar-wrap">
+												<div class="bar" style="width:73%"></div>
+											</div>
+											<div class="fl-wrap">
+												<div class="fl-item-l">
+													<b>3,567,000원</b> 기부
+												</div>
+												<div class="fl-item-r">
+													5,000,000원 목표
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="funding-item">
+								<a href="" class="link-funding">
+									<div class="funding-img"><img src="/common/img/main/@img.png" alt=""></div>
+									<div class="funding-info">
+										<p class="funding-title">상처많은 제 친구들도 행복해질 수 있을까요?</p>
+										<div class="donate-point">
+											<strong class="percent">73%</strong>
+											<div class="bar-wrap">
+												<div class="bar" style="width:73%"></div>
+											</div>
+											<div class="fl-wrap">
+												<div class="fl-item-l">
+													<b>3,567,000원</b> 기부
+												</div>
+												<div class="fl-item-r">
+													5,000,000원 목표
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<p class="sbt" style="margin-top:20px">fake table</p>
+						<div class="fake-table-box">
+							<dl class="fake-table-item">
+								<dt class="fake-table-th">중앙회</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>02-6262-3000</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:hkyung0322@chest.or.kr" target="_blank" class="link-mail">hkyung0322@chest.or.kr</a></p>
+								</dd>
+								<dt class="fake-table-th">강원 사랑의열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>033-243-1662</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:ssh8974@chest.or.kr" target="_blank" class="link-mail">skpark2009@chest.or.kr</a></p>
+								</dd>
+							</dl>
+							<dl class="fake-table-item">
+								<dt class="fake-table-th">서울 사랑의 열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>02-323-3875</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:cjw2009@chest.or.kr" target="_blank" class="link-mail">cjw2009@chest.or.kr</a></p>
+								</dd>
+								<dt class="fake-table-th">충북 사랑의열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>043-238-8027</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:staryeny@chest.or.kr" target="_blank" class="link-mail">staryeny@chest.or.kr</a></p>
+								</dd>
+							</dl>
+							<dl class="fake-table-item">
+								<dt class="fake-table-th">부산 사랑의 열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>051-790-1415</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:internations@chest.or.kr" target="_blank" class="link-mail">internations@chest.or.kr</a></p>
+								</dd>
+								<dt class="fake-table-th">충남 사랑의열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>070-8897-0500</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:guns@chest.or.kr" target="_blank" class="link-mail">guns@chest.or.kr</a></p>
+								</dd>
+							</dl>
+							<dl class="fake-table-item">
+								<dt class="fake-table-th">대구 사랑의 열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>053-667-1006</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:chanhee33@chest.or.kr" target="_blank" class="link-mail">chanhee33@chest.or.kr</a></p>
+								</dd>
+								<dt class="fake-table-th">전북 사랑의열매</dt>
+								<dd class="fake-table-td">
+									<p><i class="sprite-group-tel"></i>063-903-0638</p>
+									<p><i class="sprite-group-mail"></i><a href="mailto:sumisumi@chest.or.kr" target="_blank" class="link-mail">sumisumi@chest.or.kr</a></p>
+								</dd>
+							</dl>
+						</div>
+
+						<p class="sbt" style="margin-top:20px">기부 상담하기</p>
+
+						<div class="sb-box" style="margin-top:0">
+							<div class="sb-box-inner">
+								<p class="sb-contents-tit">기부상담신청</p>
+								<p class="sb-contents-desc">기부상담을 위해 상담받으실 분 성함과 연락처를 남겨주시면 빠른시간안에 연락드리도록 하겠습니다.</p>
+								<div class="sb-content">
+									<div class="sb-content-tbl">
+										<table>
+											<caption>기부상담신청 정보입니다.</caption>
+											<colgroup>
+												<col class="col-l">
+												<col class="col-auto">
+											</colgroup>
+											<tbody>
+											<tr>
+												<th scope="row">
+													<label for="cckfunr02_s1">상담지역</label>
+												</th>
+												<td>
+													<div class="ui-select w-full">
+														<select class="sel_type off" id="cckfunr02_s1" title="상담지역 선택" aria-hidden="true" tabindex="-1">
+															<option selected="selected">선택하세요</option>
+															<option>select1</option>
+															<option>select2</option>
+															<option>select3</option>
+															<option>select4</option>
+														</select>
+														<button type="button" class="ui-select-btn " id="cckfunr02_s1_inp" role="combobox" aria-autocomplete="list" aria-owns="cckfunr02_s1_list" aria-haspopup="true" aria-expanded="false" aria-activedescendant="cckfunr02_s1_opt_0" data-n="0" data-id="cckfunr02_s1">선택하세요</button><div class="ui-select-wrap ui-scrollbar" id="cckfunr02_s1_scroll" style="min-width:0px"><div class="ui-select-opts ui-scrollbar-item" role="listbox" id="cckfunr02_s1_list" aria-hidden="false" tabindex="-1"><button type="button" role="option" id="cckfunr02_s1_opt_0" class="ui-select-opt selected " value="선택하세요" tabindex="-1"><span class="ui-select-txt">선택하세요</span></button><button type="button" role="option" id="cckfunr02_s1_opt_1" class="ui-select-opt " value="select1" tabindex="-1"><span class="ui-select-txt">select1</span></button><button type="button" role="option" id="cckfunr02_s1_opt_2" class="ui-select-opt " value="select2" tabindex="-1"><span class="ui-select-txt">select2</span></button><button type="button" role="option" id="cckfunr02_s1_opt_3" class="ui-select-opt " value="select3" tabindex="-1"><span class="ui-select-txt">select3</span></button><button type="button" role="option" id="cckfunr02_s1_opt_4" class="ui-select-opt " value="select4" tabindex="-1"><span class="ui-select-txt">select4</span></button></div></div></div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													<label for="cckfunr02_i1">성명</label>
+												</th>
+												<td>
+													<input type="text" class="inp-base w-full" id="cckfunr02_i1" title="성명">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													<label for="cckfunr02_i2">휴대폰번호<span class="required" aria-label="필수">*</span></label>
+												</th>
+												<td class="phone-area">
+													<div class="table-cell ps-box">
+														<span><input type="text" class="inp-base" title="휴대폰 앞자리 입력" id="cckfunr02_i2"></span>
+														<span><input type="text" class="inp-base" title="휴대폰 가운데자리 입력" id="cckfunr02_i3"></span>
+														<span><input type="text" class="inp-base" title="휴대폰 뒷자리 입력" id="cckfunr02_i4"></span>
+														<button type="button" class="btn-base-imp small">인증</button>
+													</div>
+
+													<div class="table-cell ps-verify">
+														<div class="verify-area">
+															<input type="text" class="inp-base" title="인증번호" placeholder="인증번호를 입력하세요." id="cckfunr02_i5">
+															<span class="code-txt">02:59</span>
+															<button type="button" class="btn-base btn-type2 small">확인</button>
+														</div>
+													</div>
+
+													<p class="table-cell">NICE 평가정보에서 인증 받은 휴대폰 번호를 사용하고 있습니다.</p>
+
+													<div class="table-cell privacy-area">
+														<span class="checkbox">
+															<input type="checkbox" name="" id="cckfunr02_c1" checked="">
+															<label for="cckfunr02_c1"><span>기부상담을 위해 개인정보 제 3자 제공에 동의합니다.</span></label>
+														</span>
+
+														<div class="privacy-box">
+															※개인정보 제3자 제공 이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 기부관련업무 및 콜센터 상담이용 등의 해당 업무가 제한을 받을 수 있습니다.
+														</div>
+
+														<div class="btn-area-r">
+															<button type="button" class="btn-base-bline small">개인정보처리방침</button>
+														</div>
+													</div>
+
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="btn-area">
+										<a href="" class="btn-base-imp">상담신청</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Paging</h2>
+                        <div class="paging-area">
+                            <a href="" class="paging-item type-img"><i class="sprite-paging-first">처음</i></a>
+                            <a href="" class="paging-item type-img-prev"><i class="sprite-paging-prev">이전</i></a>
+                            <a href="" class="paging-item active">1</a>
+                            <a href="" class="paging-item">2</a>
+                            <a href="" class="paging-item">3</a>
+                            <a href="" class="paging-item">4</a>
+                            <a href="" class="paging-item">5</a>
+                            <a href="" class="paging-item type-img-next"><i class="sprite-paging-next">다음</i></a>
+                            <a href="" class="paging-item type-img"><i class="sprite-paging-last">마지막</i></a>
+                        </div>
+					</section>
+
+                    <section>
+                        <h2>Search</h2>
+                        <div class="bbs-search">
+                            <div class="search-area">
+                                <div class="search-col select">
+                                    <div class="ui-select">
+                                        <select id="selectID_001">
+                                            <option selected="selected">제목</option>
+                                            <option>내용</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="search-col int"><input type="text" class="inp-base ui-inpcancel" id="" value=""></div>
+                                <div class="search-col btns"><button type="button" class="btn-base-imp">검색</button></div>
+                            </div>
+                        </div>
+                    </section>
+
+					<section>
+						<h2>prenet</h2>
+						<div class="prenet-area">
+							<dl class="prenet-item">
+								<dt><i class="sprite-paging-prenet1"></i>다음글</dt>
+								<dd><a href="" class="clamp">2019년 KSD공모사업 서류심사 결과 안내</a></dd>
+								<dd class="prenet-day">2019-12-01</dd>
+							</dl>
+							<dl class="prenet-item">
+								<dt><i class="sprite-paging-prenet2"></i>이전글</dt>
+								<dd><a href="" class="clamp">한국수출입은행 차량공모사업 선정결과 안내 한국수출입은행 차량공모사업 선정결과 안내 한국수출입은행 차량공모사업 선정결과 안내 한국수출입은행 차량공모사업 선정결과 안내</a><i class="ico-file">첨부파일</i></dd>
+								<dd class="prenet-day">2019-12-01</dd>
+							</dl>
+						</div>
+					</section>
+
+					<section>
+						<h2>history</h2>
+						<div class="history-wrap line-type with-img">
+							<div class="history-item">
+								<p class="year-txt">2019</p>
+								<dl class="history-info">
+									<dt class="history-info-month">04.03</dt>
+									<dd class="history-info-txt">W아너 소사이어티 리더 회의 <br>“W아너 소사이어티 두 번째 전달식”</dd>
+									<dd class="history-info-img"><img src="/common/img/contents/history_img01.jpg" alt=""></dd>
+								</dl>
+							</div>
+							<div class="history-item">
+								<p class="year-txt">2018</p>
+								<dl class="history-info">
+									<dt class="history-info-month">10.23</dt>
+									<dd class="history-info-txt">여성 사회복지 현장과 함께하는 W아너 소사이어티 리더 모임 <br>“W아너 소사이어티 첫 번째 전달식”</dd>
+									<dd class="history-info-img"><img src="/common/img/contents/history_img02.jpg" alt=""></dd>
+									<dt class="history-info-month">06.21</dt>
+									<dd class="history-info-txt">W아너 소사이어티 리더 회의</dd>
+									<dd class="history-info-img"><img src="/common/img/contents/history_img03.jpg" alt=""></dd>
+									<dt class="history-info-month">02.28</dt>
+									<dd class="history-info-txt">W아너 소사이어티 리더 회의</dd>
+									<dd class="history-info-img"><img src="/common/img/contents/history_img04.jpg" alt=""></dd>
+								</dl>
+							</div>
+							<div class="history-item">
+								<p class="year-txt">2017</p>
+								<dl class="history-info">
+									<dt class="history-info-month">09.12</dt>
+									<dd class="history-info-txt">여성 아너 소사이어티 회원 모임 발대식</dd>
+									<dd class="history-info-img"><img src="/common/img/contents/history_img05.jpg" alt=""></dd>
+								</dl>
+							</div>
+						</div>
+					</section>
+
+				</article>
+				
+
+			</main>
+		</div>
+		<footer class="base-footer" id="baseFooter"></footer>
+        <div class="box-wing" id="rightWing"></div>
+	</div>
+
+	<script>
+        (function($, win, doc, undefined) {
+            $(doc).ready(function(){
+
+				//필수실행
+                $plugins.common.init({
+					menuid: '01_02_03' //1depth_2depth_3depth
+				});
+				
+				//slider
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 3,
+					spaceBetween: 30,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.btn-swiper-next',
+						prevEl: '.btn-swiper-prev',
+					}
+				});
+				//tab
+				$plugins.uiTab({ 
+					id:'uiTabguide1', 
+					current:0
+				});
+				$plugins.uiTab({ 
+					id:'uiTabguide2', 
+					current:0
+				});
+				$plugins.uiTab({ 
+					id:'uiTabguide3', 
+					current:0
+				});
+
+				//acco
+				$plugins.uiAccordion({ 
+					id: 'uiAccoguide1', 
+					current: [0], 
+					autoclose: true
+				});
+				
+            });
+        })(jQuery, window, document);
+	</script>
+</body>
+</html>

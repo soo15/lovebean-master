@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+	<meta name="keywords" content="사랑의 열매, 사회복지공동모금회"/>
+	<meta name="description" content=""/>
+    
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+
+    <title>사회복지공동모금회 사랑의열매</title>
+
+	<link rel="stylesheet" href="/common/css/ui.base.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="/common/js/ui.global.js"></script>
+	<script src="/common/js/ui.plugins.js"></script>
+	<script src="/common/js/ui.common.js"></script>
+
+</head>
+
+<body>	
+	<div class="base-skip" id="baseSkip"></div>
+	<div class="base-layer" id="baseLayer"></div>
+	<div class="base-wrap" id="baseWrap">
+		<header class="base-header" id="baseHeader"></header>
+		<div class="base-body type-sub" id="baseBody">
+			<div class="sub-visual visual02_01">
+				<div class="sub-title-area">
+					<h2 class="heading-title-a">일시기부</h2>
+					<p class="title-sub-txt">당신의 나눔이 세상을 더욱 밝게 합니다.</p>
+				</div>
+			</div>
+			<div class="base-breadcrumbs" id="baseBreadcrumbs"></div>
+			<main class="base-main" id="baseMain">
+				<div class="contents-area">
+					<div class="contents-hd line-type">
+						<h3><strong>법인</strong><span>당신의 나눔이 모두의 행복입니다. 나눔의 힘을 믿어보세요.</span></h3>
+						<div class="contents-menu-nav">
+							<button type="button" class="prev-menu">개인</button>
+						</div>
+					</div>
+
+					<div class="seo-box">
+						<p class="tab-desc">안녕하세요. 사랑의열매입니다. 기부신청 감사드립니다. 기업기부의 경우에는 담당자와 통화가 필요합니다.<br>아래의 내용을 모두 작성해주세요. 최대한 빨리 연락드리겠습니다.</p>
+						<!-- S : 기부상담신청 -->
+						<div id="counselBox" class="sb-box"></div>
+						<!-- E : 기부상담신청 -->
+					</div>
+				</div>
+			</main>
+		</div>
+		
+		<footer class="base-footer" id="baseFooter"></footer>
+        <div class="box-wing" id="rightWing"></div>
+	</div>
+
+	<script>
+        (function($, win, doc, undefined) {
+            $(doc).ready(function(){
+				//필수실행
+				//메뉴는 00 부터 시작
+                $plugins.common.init({
+					menuid: '01_01_00_01' //1depth_2depth_3depth
+				});
+				
+            });
+			//tab
+			$plugins.uiTab({
+				id:'uiTabguide1',
+				current:1
+			});
+        })(jQuery, window, document);
+	</script>
+</body>
+</html>

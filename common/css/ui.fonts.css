@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/font/notokr-thin.eot');/* IE 호환성 보기 */
+    src:url('/common/font/notokr-thin.eot?#iefix') format('embedded-opentype'),/* IE 6 ~ 8 */
+    url('/common/font/notokr-thin.woff2') format('woff2'),/* WOFF2 지원 브라우저 */
+    url('/common/font/notokr-thin.woff') format('woff'),/* 모던 브라우저 */
+    url('/common/font/notokr-thin.svg#notokr-thin') format('svg');/* 구 모바일 브라우저 */
+    font-weight:100;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/font/notokr-light.eot');
+    src:url('/common/font/notokr-light.eot?#iefix') format('embedded-opentype'),
+    url('/common/font/notokr-light.woff2') format('woff2'),
+    url('/common/font/notokr-light.woff') format('woff'),
+    url('/common/font/notokr-light.svg#notokr-light') format('svg');
+    font-weight:200;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/fonts/notokr-demilight.eot');
+    src:url('/common/fonts/notokr-demilight.eot?#iefix') format('embedded-opentype'),
+    url('/common/fonts/notokr-demilight.woff2') format('woff2'),
+    url('/common/fonts/notokr-demilight.woff') format('woff'),
+    url('/common/fonts/notokr-demilight.svg#notokr-demilight') format('svg');
+    font-weight:300;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/fonts/notokr-regular.eot');
+    src:url('/common/fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+    url('/common/fonts/notokr-regular.woff2') format('woff2'),
+    url('/common/fonts/notokr-regular.woff') format('woff'),
+    url('/common/fonts/notokr-regular.svg#notokr-regular') format('svg');
+    font-weight:400;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/fonts/notokr-medium.eot');
+    src:url('/common/fonts/notokr-medium.eot?#iefix') format('embedded-opentype'),
+    url('/common/fonts/notokr-medium.woff2') format('woff2'),
+    url('/common/fonts/notokr-medium.woff') format('woff'),
+    url('/common/fonts/notokr-medium.svg#notokr-medium') format('svg');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/fonts/notokr-bold.eot');
+    src:url('/common/fonts/notokr-bold.eot?#iefix') format('embedded-opentype'),
+    url('/common/fonts/notokr-bold.woff2') format('woff2'),
+    url('/common/fonts/notokr-bold.woff') format('woff'),
+    url('/common/fonts/notokr-bold.svg#notokr-bold') format('svg');
+    font-weight:600;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Noto Sans KR';
+    src:url('/common/fonts/notokr-black.eot');
+    src:url('/common/fonts/notokr-black.eot?#iefix') format('embedded-opentype'),
+    url('/common/fonts/notokr-black.woff2') format('woff2'),
+    url('/common/fonts/notokr-black.woff') format('woff'),
+    url('/common/fonts/notokr-black.svg#notokr-black') format('svg');
+    font-weight:700;
+    font-style:normal;
+}

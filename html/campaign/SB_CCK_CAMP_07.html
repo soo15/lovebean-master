@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+    <meta name="keywords" content="사랑의 열매, 사회복지공동모금회"/>
+    <meta name="description" content=""/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>사회복지공동모금회 사랑의열매</title>
+
+    <link rel="stylesheet" href="/common/css/ui.base.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="/common/js/ui.global.js"></script>
+    <script src="/common/js/ui.plugins.js"></script>
+    <script src="/common/js/ui.common.js"></script>
+
+</head>
+
+<body>	
+	<div class="base-skip" id="baseSkip"></div>
+	<div class="base-layer" id="baseLayer"></div>
+	<div class="base-wrap" id="baseWrap">
+        <header class="base-header" id="baseHeader"></header>
+		<div class="base-body type-sub" id="baseBody">
+			<div class="sub-visual visual00_03">
+				<div class="sub-title-area">
+					<h2 class="heading-title-a">크라우드펀딩</h2>
+					<p class="title-sub-txt">당신이 함께하는 응원! 크라우드 펀딩입니다. </p>
+				</div>
+			</div>
+			<div class="base-breadcrumbs" id="baseBreadcrumbs"></div>
+			<main class="base-main" id="baseMain">
+				<div class="contents-area">
+                    <div class="contents-hd">
+                        <h3><strong>진행중인 펀딩 </strong><span>당신이 함께하는 응원! 크라우드 펀딩입니다.</span></h3>
+                        <div class="contents-menu-nav">
+                            <button type="button" class="prev-menu">펀딩 신청하기</button>
+                            <button type="button" class="next-menu">종료된 펀딩</button>
+                        </div>
+                    </div>
+					<div class="seo-box">
+                        <div class="end-funding-area">
+                            <div class="funding-img">
+                                <p class="hide">어른이 되어가는 너의 여정을 응원해!</p>
+                            </div>
+                            
+                            <h2 class="table-tit">댓글쓰기</h2>
+                            <div class="reply-wrap type-write">
+                                <div class="reply-list">
+                                    <div class="reply-item">
+                                        <div class="reply-name">
+                                            <label for="rp001">기부자명</label>
+                                            <input type="text" class="inp-base" id="rp001">
+
+                                            <label for="rp002">비밀번호</label>
+                                            <input type="password"  placeholder="숫자 6자리" class="inp-base" id="rp002">
+
+                                        </div>
+                                        <p class="donation-guide-txt">* 기부하신분에 한하여 댓글이 가능합니다. 기부시 입력했던 기부자명과 비밀번호를 설정해주세요.</p>
+                                        <div class="reply-text">
+                                            <textarea class="inp-base" name="" id="" cols="30" rows="10" placeholder="펀드 기부를 해주셔서 감사드립니다.&#13;&#10; 여기에 지금 바로 응원의 메시지를 남겨주세요. 댓글은 500자까지만 가능하며, 기부하셨던 분에 한해서만 댓글을 남기실 수 있습니다."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-area">
+                                <button type="button" class="btn-base-imp">등록</button>
+                            </div>
+                            
+
+                        </div>
+					</div>
+				</div>
+			</main>
+		</div>
+		
+		<footer class="base-footer" id="baseFooter"></footer>
+        <div class="box-wing" id="rightWing"></div>
+	</div>
+
+	<script>
+        (function($, win, doc, undefined) {
+            $(doc).ready(function(){
+
+                //필수실행
+                //메뉴는 00 부터 시작
+                $plugins.common.init({
+                    menuid: '00_01_01' //1depth_2depth_3depth
+                });
+
+                //acco
+                $plugins.uiAccordion({
+                    id: 'uiAccoGUID04_1',
+                    current: [0],
+                    autoclose: true
+                });
+
+                $plugins.uiDropdown({ 
+                    id:'uiDrop1', 
+                    ps:'tc', 
+                    eff:'st', 
+                    auto: false,
+                    dim:false,
+                    openback: function() { console.log('open callback'); },
+                    closeback: function() { console.log('close callback'); },
+                    offset:true 
+                });
+
+            });
+        })(jQuery, window, document);
+	</script>
+</body>
+</html>

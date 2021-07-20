@@ -1,0 +1,1469 @@
+@charset "utf-8";
+
+/* sprite */
+@media all and (max-width:1024px) {
+    .ps-verify input.inp-base,
+    .ps-verify input {padding-right:50px;width:calc(100% - 92px)}
+    .verify-area .code-txt {right:92px;left:unset}
+    [class^="sprite-footer_"] {background-image:url("/common/img/common/sprite_footer_m.png");background-size:auto 50px}
+    [class^="sprite-header_"],
+    .nav-sub h3:after {background-image:url("/common/img/common/sprite_header_m.png");background-size:auto 50px}
+
+    [class^="sprite-breadcrumb_"],
+    .breadcrumb-depth .breadcrumb-btn:after {background-image:url("/common/img/common/sprite_breadcrumb_m.png");background-size:auto 50px}
+
+    [class^="sprite-paging-"] {background-image:url("/common/img/common/sprite_paging_m.png");background-size:auto 50px}
+
+    /* footer */
+    .base-footer-wrap {padding-left:20px;padding-right:20px}
+
+    /* select */
+    /*select {background-image:url("/common/img/common/sel_blt_m.png");background-size:20px auto}*/
+
+    /* table */
+    .tb-type_a th {padding:19px 10px}
+    .tb-type_a td {padding:12px 10px}
+
+    /* header */
+    .header-desktop {display:none}
+    .header-mobile {display:block}
+    .base-header-wrap {height:45px;width:100%;padding:0}
+    .base-header-wrap .logo {height:20px;left:28px;top:13px;width:auto;font-size:0}
+    .base-header-wrap .logo img {height:100%}
+
+    .header-mobile .btn-util {position:absolute;right:25px;top:13px}
+    .header-mobile .btn-util > button {width:20px;height:20px;padding:2px;vertical-align:top;margin-left:3px;float:left}
+    .header-mobile .btn-util .ui-menu {margin-left:10px}
+    .menu-wrap {position:fixed;width:240px;height:100%;background:#fff;top:0;right:-250px;transition:right 0.2s ease-in;z-index:101}
+    .on .menu-wrap {right:0}
+    .header-mobile.on:after {content:"";display:block;width:100%;height:100%;position:fixed;left:0;top:0;background:rgba(0,0,0,0.5);z-index:100}
+    .btn-close {position:absolute;width:15px;height:15px;right:27px;top:14px;background:url(/common/img/common/btn_close.png) no-repeat 50% 50%;background-size:15px}
+    .menu-sec-1 {width:100%;height:45px;border-bottom:1px solid #121212;background:#f5f5f5;padding:8px 28px 0}
+    .menu-sec-1 .ui-drop {font-size:10px;font-weight:600}
+    .menu-sec-1 .ui-drop span {display:inline-block;vertical-align:middle}
+    .menu-sec-1 .ui-drop [class^="sprite-header_"] {display:inline-block;margin:0 0 0 1px;vertical-align:middle}
+    .menu-sec-1 .ui-drop {margin-right:5px}
+    .menu-sec-2 {overflow:hidden}
+    .menu-sec-2 a {width:50% !important;float:left;display:block;padding:5px;height:76px;margin-top:0 !important;min-width:10px}
+    .menu-sec-2 a:before {content:"";display:block;margin:0 auto;width:35px;height:35px;background:url(/common/img/common/ico_nav1.png) no-repeat 0 0;background-size:35px}
+    .menu-sec-2 .btn-base-imp:before {content:"";display:block;margin:0 auto;width:35px;height:35px;background:url(/common/img/common/ico_nav2.png) no-repeat 0 0;background-size:35px}
+
+    .nav-mobile {width:100%;margin:0;border-top:5px solid #f5f5f5;height:calc(100vh - 181px);overflow-x:hidden;overflow-y:auto}
+    .nav-mobile .ui-acco-btn {padding:0 0 0 28px;height:37px;font-size:14px;border-bottom:1px solid #d8d8d8}
+    .nav-mobile .ui-acco-btn:after {content:"";position:absolute;top:12px;right:13px;display:block;width:15px;height:15px;background:url(/common/img/common/ico_acco.png) no-repeat 0 0;background-size:30px }
+    .nav-mobile .ui-acco-btn.selected {color:#cb0802}
+    .nav-mobile .ui-acco-btn.selected:after {background-position:-15px 0}
+
+    .nav-mobile .ui-acco-wrap .ui-acco-wrap {border-top:none}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl {padding-bottom:0}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl.selected {background-color:#fef2f2;/*border-top:1px solid #d8d8d8;*/}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl .ui-acco-tit {background-color:transparent}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl .ui-acco-btn {height:32px;padding-left:0;background:none;font-size:12px;line-height:32px;color:#333;border-bottom:1px solid #888282}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl .ui-acco-btn:after {background-position:0 -15px;top:8px;right:2px}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl .ui-acco-btn.selected:after {background-position:-15px -15px}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl .ui-acco-btn.selected {color:#cb0802}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl > ul {padding:8px 26px}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl > ul > li .ui-acco-pnl > ul {padding:8px 16px;background-color:#fef2f2}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl > ul li a {display:block;font-size:11px;line-height:24px;color:#333}
+    .nav-mobile .ui-acco-wrap .ui-acco-pnl > ul li a.selected {color:#cb0802;text-decoration:underline}
+    .mobile-sns {background-color:#121212;height:60px;padding-top:23px;text-align:center}
+    .mobile-sns-area {display:inline-block}
+    .mobile-sns-area:after {content:'';display:block;clear:both}
+    .mobile-sns-area .mobile-sns-item {float:left}
+    .mobile-sns-area .mobile-sns-item a {display:block;font-size:0;padding:0 7px}
+
+    .sub-title-area {width:100%;padding-right:20px;padding-left:20px}
+
+    .base-body.type-sub .base-main {width:100%}
+    .base-body.type-bg {padding:30px 25px}
+    .base-body.type-bg .base-main {padding:45px 25px 65px}
+    .contents-area {padding:0 27px 100px}
+
+    .view-type2 .view-img {width:50%}
+
+    /* sb contents */
+    .sb-box {padding:40px 0}
+
+    /* credit card, ars */
+    .banner-img {margin-top:35px}
+
+    .select-tit {float:none;margin-right:0}
+    .select-radio-group {float:none;display:block;margin-top:15px}
+
+    .donate-list {margin-top:40px;padding:30px 0 20px}
+    .donate-list-area .donate-list-item {text-align:center}
+    .donate-list-area .donate-list-item ~ .donate-list-item:before {display:none}
+    .donate-list-area .donate-list-item:nth-child(2) {width:auto}
+    .donate-list-item i {position:static;display:inline-block;vertical-align:middle}
+    .donate-list-item i.ico-passbook + .item-txt {padding-right:0}
+    .donate-list-item .item-txt {float:none;display:inline-block;margin-left:20px;padding-right:0;vertical-align:middle}
+
+    .point-card-list li {width:50%;min-height:320px;max-height:320px;padding:0 35px;text-align:left}
+    .point-card-list .card-img {text-align:center}
+    .point-card-list .point-card-tit {text-align:center}
+    .point-card-list p {margin-left:0}
+
+    .area-type-item {margin-top:20px;padding:0 20px}
+    .list-boxstep-item {width:100%;margin:10px 0 !important}
+    .list-boxstep-tit b {height:50px;font-size:26px}
+    .list-boxstep-cont {padding:10px 15px;min-height:0}
+
+    .cpl-tbl {margin-top:30px}
+    .cpl-tbl .col-1 {width:100px}
+    .cpl-tbl .col-2 {width:160px}
+    .cpl-tbl .col-3 {width:auto}
+    .cpl-tbl tbody th {background:#fff}
+    /*.mb-type li {display:inline-block; text-align:center;margin:0 4%}*/
+
+    .btn-area {margin-top:30px}
+
+    /* 직접입력 button */
+    .ui-togglebtn.type-sum button {margin-bottom:5px}
+    .ui-togglebtn.type-sum .ui-inpcancel-group button {margin-left:0 !important}
+
+    /* 기부 */
+    .area-type-a {padding:35px 0}
+    .area-type-a.type2 {padding:35px 0 50px}
+    .donation-guide-item {padding:0 60px}
+    .donation-section .table-tit,
+    .donation-section .table-tit ~ .table-tit,
+    .area-type-a.type2 + .donation-section .table-tit ~ .table-tit {margin:35px 0 15px}
+    .area-type-a.type2 + .donation-section .table-tit {margin:0 0 15px}
+
+    /* 유산기부 */
+    .partici-use {padding:50px 30px}
+    .partici-list {display:table;width:100%}
+    .partici-list li {display:table-cell;float:none}
+    .partici-list li ~ li {padding-left:25px;margin-left:0}
+    .partici-list li ~ li:before {display:none}
+    .legacy-list li, .legacy-list li >div {display:block;width:100%}
+    .legacy-list li ~ li, .legacy-list li div ~ div {margin-top:25px}
+
+    /* 사업성과 */
+    .graph-a-item {overflow-x:auto;overflow-y:auto;font-size:0;white-space:nowrap;bottom:-30px;padding-bottom:30px}
+    .graph-a-item li {display:inline-block;float:none}
+
+    .box-base.type-search {padding:25px}
+    .type-search .inp-base,
+    .box-base.type-search .inp-base {height:64px;width:100%;border:2px solid #e8e8e8;margin-bottom:10px}
+    .type-search .btn-base-main {width:100%;margin:0}
+
+    .list-search-none {width:100%;margin-top:40px}
+    .list-search-none strong {display:block;width:100%;text-align:center;padding:70px 0 50px;font-size:16px;color:#121212;background:url(/common/img/contents/search_none.png) no-repeat 50% 0;background-size:60px}
+    .list-search-none strong b {color:#cb0802;font-weight:700}
+
+    .list-none-guide {width:100%;margin:0 auto;padding:10px 20px;text-align:left;background:#fef2f2}
+    .list-none-guide li {font-size:12px;display:inline-block;width:100%;margin:0 }
+    .type-search .ui-modal-cont {max-height:100%;width:100%}
+
+    /* 무통장 입금 기부 */
+    .fake-table-box.type2 {padding-bottom:30px}
+    .fake-table-box.type2 .fake-table-th {width:120px;padding:12px 8px 0}
+    .fake-table-box.type2 .fake-table-th p {word-break:break-word}
+    .fake-table-box.type2 .fake-tit {font-size:14px}
+    .account-num {margin-top:12px;font-size:13px;line-height:16px}
+    .account-num .sprite-group-tel {margin-right:3px}
+    .account-holder {margin-top:12px;font-size:13px}
+    .fake-table-box.type2 .fake-table-td p {font-size:12px;line-height:18px}
+    .fake-table-box.type2 .fake-table-td p ~ p {margin-top:5px}
+
+    .type-search {width:100% !important;top:0 !important;left:0 !important;margin:0 !important}
+    .type-search .ui-modal-wrap {width:100% !important;top:0 !important;left:0 !important;margin:0 !important;background:#fff;height:auto}
+    .type-search .ui-modal-header .ui-modal-tit {color:#111;font-size:18px}
+    .type-search .ui-modal-header {color:#111}
+    .type-search .ui-modal-footer {width:25px;height:25px;top:10px;right:10px}
+    .type-search .ui-modal-close {width:25px;height:25px;background-image:url(/common/img/common/btn_close_l_m.png);background-size:25px }
+    .type-search .ui-modal-cont {height:auto !important;padding:0 20px 20px}
+    .type-search .inp-base, .box-base.type-search .inp-base {height:40px}
+    .type-search .btn-base-main {height:40px}
+
+    /* 희망자산나눔 */
+    .donation-find-list li {width:110px}
+    .donation-find-list li ~ li {margin-left:20px}
+    .donation-find-group .donation-desc {margin-top:0}
+
+    /* 사회공헌 현물기부 */
+    .area-type-a .area-type-tit2.type2 {margin-top:30px}
+    .donation-article.type4 .donation-find-area {padding-bottom:30px}
+    .donation-article.type4 .donation-find-list li {width:150px}
+    .donation-article.type4 .donation-find-list li ~ li {margin-left:15px}
+
+    /* 사회공헌 성금기부 */
+    .enterprise-box {margin-bottom:50px;text-align:center}
+    .enterprise-list li {display:inline-block;float:none;font-size:0;margin:0 10px 15px}
+    .enterprise-list li ~ li {margin:0 10px 15px}
+    .enterprise-list li:nth-child(9n), .enterprise-list li:nth-child(n+9) {margin:0 10px 15px}
+    .donation-article-inner {padding:25px 15px}
+    .donation-article-img {margin-bottom:15px}
+    .desc-box-txt {margin:10px 0 0}
+
+    /* 나눔 */
+    .split-info .split-list .split-item {width:calc((100% - 40px) / 3)}
+
+
+    /* 기부자 조언기금 */
+    .gallery-list ul {margin:20px 0 0}
+    .gallery-list li {margin:0 2.12962962963% 20px 0}
+    .gallery-tit {margin-top:10px;font-size:15px;line-height:18px}
+
+    /* 착한가정 */
+    .donation-video-area {margin:30px auto 0}
+    .join-benefit-list {padding:20px 15px}
+    .list-benefit-num {margin-right:0}
+    .text-benefit-group, .text-benefit {display:block}
+    .join-benefit-list li .btn-base-bline {margin:10px 0 0}
+    .join-benefit-list li ~ li {margin-top:35px}
+    .join-benefit-plate img ~ img {margin:10px 0 0}
+
+    /* 착한가게 */
+    .benefit-img-box {margin-right:30px}
+    .benefit-desc-box {margin-top:0}
+    .benefit-desc-list {margin-top:0}
+
+    .donate-list-area.type_small .donate-list-item {text-align:left}
+    .donate-list-area.type_small .donate-list-item ~ .donate-list-item:before {content:'';display:block;position:absolute;left:0;top:50%;width:1px;height:40px;margin-top:-20px;border-left:1px dotted #aaa}
+    .lovetemp {padding:30px}
+    .lovetemp [class*='camp-ico'] {margin-right:20px}
+    .lovetemp [class*='camp-ico'].camp-ico3 {margin-right:70px}
+    .lovetemp-desc {width:300px}
+
+    .list-love li:nth-child(4) {clear:none}
+    .list-love li:nth-child(7) {clear:none}
+    .list-love li.n7 {clear:both}
+
+    /* 펀딩신청하기 */
+    .text-date-info {display:block;position:static;margin:5px 0 0}
+
+    /* 기부내역 조회 */
+    .donation-box {padding:50px 22px 47px 120px;text-align:left}
+    .donation-box:before {left:45px}
+
+    /* 개인정보 처리방침 */
+    .terms-group .checkbox {margin-top:30px}
+
+    /* 나의 기부 설계 */
+    .box-mydonation-result {padding:25px 30px 35px 10px}
+    .box-mydonation-group {text-align:center}
+    .list-donation {display:inline-block;float:none}
+    .box-mydonation-group .list-donation:nth-child(n+2),
+    .box-mydonation-group .list-donation:nth-child(5n+1) {margin-left:20px}
+    .box-mydonation-group .list-donation:nth-child(n+5) {margin-top:30px}
+    .list-donation span {margin-top:8px;line-height:20px}
+
+    /* 소다수나눔 캠페인 */
+    .section-donation-how {padding:38px 43px}
+    .routine-donation, .pause-donation {float:none;width:100%;padding:0}
+    .pause-donation {margin-top:40px}
+    .donation-how-list {margin-top:40px;padding-left:0}
+
+    /* 기부금 영수증 신청 */
+    .section-info-group {margin-top:30px}
+    .section-info-table {margin:30px 0 50px}
+    .receipt-apply-tit {margin-top:30px;padding-bottom:15px}
+    .receipt-apply-list {padding:40px 10px 25px}
+    .list-item-apply span {margin-top:14px}
+    .receipt-apply-box {padding:28px 10px}
+
+    /* sitemap */
+    .sitemap-top .list-area .area-item .link-area {padding:0 11px}
+
+    /* ars */
+    .ars-area {padding:40px 0 20px}
+
+    /* wing */
+    .box-wing {display:none;}
+}
+
+@media all and (max-width:768px) {
+    /**/
+    .base-body.type-sub .base-main {padding:30px 25px 40px}
+
+    .camp-s2 .tb-type_b tbody tr th {padding:10px;text-align:left;background:#f5f5f5}
+    .list-love li {float:left;width:100%;margin-bottom:20px}
+
+    .list-love li.n7,
+    .list-love li.n8,
+    .list-love li.n9,
+    .list-love li.n10 {margin-bottom:20px}
+    .area-type-a.type7 p {font-size:14px}
+    .lovetemp {padding:15px;text-align:center}
+    .lovetemp [class*='camp-ico'] {margin:0 auto 10px !important}
+    .lovetemp dl {text-align:left}
+    .lovetemp-desc dt:after {display:none}
+    .lovetemp-desc dd {text-align:center}
+    .lovetemp-desc dt {width:100px;height:20px;margin:0 auto;background:url(/common/img/contents/ico_cmp.png) no-repeat -90px -90px;background-size:340px}
+    .lovetemp .camp-ico {width:116px;height:131px;background-position:0 -252px;background-size:340px}
+    .lovetemp .camp-ico3 {display:block;width:90px;height:160px;background-position:0 -90px;background-size:340px}
+    .lovetemp-desc {display:block;width:100%}
+    .donation-article .in-item {display:block;width:100%}
+    .camp-ico1 {display:block;width:110px;height:85px;background:url(/common/img/contents/ico_cmp.png) no-repeat -90px 0;margin:0 auto;background-size:340px}
+    .camp-ico2 {display:block;width:125px;height:85px;background:url(/common/img/contents/ico_cmp.png) no-repeat -200px 0;margin:0 auto;background-size:340px}
+    .type-write .reply-list {margin-top:0}
+    .type-write .reply-name {padding-left:0}
+    .reply-name label:first-child {padding-left:20px}
+    .reply-item:before {top:14px;width:17px;height:17px;background-size:17px }
+    .reply-item {padding-left:0;margin-top:10px}
+    .reply-name {padding-left:20px}
+    .reply-name .inp-base {margin:0}
+    .reply-text {margin:5px 0 0;padding:10px}
+    .bg-p {background:transparent !important}
+    .rentaltime-area .radio-group {display:block}
+    .rentaltime-area .inp-base {width:100px}
+    .datepicker-wrap {width:120px}
+    .datepicker-wrap.mgl-s {margin-left:0 !important}
+    .ui-modal.type-large {width:100%;height:100% !important;margin-top:0 !important;top:0 !important}
+    .ui-modal.type-system,
+    .ui-modal.type-small {width:calc(100% - 30px)}
+    .ui-modal {display:none;opacity:0;position:fixed;z-index:1;width:calc(100% - 30px);height:auto;padding:0}
+    .modal-appl11_1 .ui-modal-cont {width:100%}
+
+    .article-contents-text {margin-bottom:30px}
+    .text-desc {font-size:12px}
+
+    /* common */
+    .mobile-block {display:block}
+    .only-mobile {display:block}
+    .only-pc {display:none !important}
+
+    /* txt */
+    .heading-title-b {font-size:20px}
+    .txt-big-a {font-size:20px}
+
+    .img-wrap {width:100%;text-align:center}
+    .img-wrap img {width:100%}
+    .img-wrap .wide-scroll img {width:auto}
+    /* breadcrumbs */
+    .base-breadcrumbs {display:none}
+
+    /* footer */
+    .base-footer-wrap {padding:24px 0 0}
+    .base-footer-wrap .logo {float:none;margin:0 auto;width:98px;height:24px;background-size:100%;background-image:url("/common/img/common/logo_f_m.png")}
+    .base-footer-wrap .footer-link {display:none}
+    .footer-address {float:none;margin:0;padding:25px 0;border:none;text-align:center}
+    .footer-menu {display:inline-block}
+    .address-txt {line-height:16px}
+    .address-txt ~ .address-txt .address-item {font-size:8px}
+    .footer-address .address-txt .address-item.only-mobile {display:inline-block}
+    .footer-address .address-txt .address-item ~ .address-item,
+    .footer-address .address-txt .address-item.only-mobile + .address-item {padding-left:8px;margin-left:7px}
+    .footer-address .address-txt .address-item ~ .address-item:before {top:5px;height:6px}
+    .footer-address .address-txt .address-item.only-mobile + .address-item:before {display:block}
+    .footer-address .address-txt .address-item:nth-child(4) {padding-left:0;margin-left:0}
+    .footer-address .address-txt .address-item:nth-child(4):before {display:none}
+
+    /* sub contents */
+    .class-info > span {height:auto}
+    .base-body.type-sub .base-main {width:100%;max-width:768px}
+    
+
+    .contents-area {padding:0 20px 80px}
+    .tab-desc {margin:22px 0 48px}
+    .table-tit {margin:32px 0 14px}
+    .birthday-form .birthday-txt {margin:0px 14px 0px 6px}
+    .email-ico {width:4%;margin:0 2%;text-align:center}
+    .email-area input[type="text"] {width:calc(50% - 4%)}
+    .email-area .email-ico {margin:0}
+    .post-code [class*="btn-base"].small {float:right}
+    .post-code input[type='text'] {width:calc(100% - 120px)}
+    .tb-type_a .post-code input[type="text"].in-w02 {width:calc(70% - 11px)}
+    .hope-area select {Width:100%}
+    .class-info > .class-info-t {line-height:1.2;margin:10px 0 2px}
+    /* form */
+    [class*='tb-type_'] .form-w01,
+    [class*='tb-type_'] .form-w02,
+    [class*='tb-type_'] .form-w04,
+    [class*='tb-type_'] .form-w05,
+    [class*='tb-type_'] .form-w06,
+    [class*='tb-type_'] .form-w07 {width:100%}
+    .checkbox label, .radio label {font-size:12px;padding-left:20px}
+    .class-info-inline {margin:0}
+    /* table */
+    [class*='tb-type_'] table {font-size:12px}
+    /* .tb-type_a th {padding:19px 18px}
+    .tb-type_a td, .tb-type_b th, .tb-type_b td {padding:12px 18px}
+    .tb-type_a .col-xs {width:30%} */
+
+    .month-select {margin:10px auto;width:100%}
+    /* not-head */
+    .not-head colgroup,
+    .not-head thead {display:none}
+    .not-head tbody,
+    .not-head tr {display:block}
+    .not-head tr {border-bottom:1px solid #d4d4d4}
+    .not-head tbody tr:hover {background-color:#fef2f2}
+    .not-head tr:last-child {border-bottom:none}
+    .not-head tr:nth-child(even) {background-color:#f5f5f5}
+    .not-head td {display:inline-block;border:none;padding:10px}
+    .not-head td * {vertical-align:middle}
+    .not-head td.th-title {display:block;border-top:1px dashed #d4d4d4;border-bottom:1px dashed #d4d4d4 !important}
+    .not-head td.th-member1 {width:100%;text-align:left}
+    .not-head td.th-member1 br {display:none}
+    .not-head td.th-member2 {border-top:1px solid #d4d4d4}
+    .not-head td.th-member2:before {display:block;text-align:left;margin-bottom:10px}
+    .not-head td.th-attach {display:block;border-top:1px dashed #d4d4d4;border-bottom:1px dashed #d4d4d4 !important;text-align:left}
+
+
+    .not-head td:before {padding-right:5px;font-weight:600;color:#555}
+    .not-head td.th-number:before {content:'번호 :'}
+    .not-head td.th-type:before {content:'구분 :'}
+    .not-head td.th-write:before {content:'등록자 :'}
+    .not-head td.th-day:before {content:'등록일 :'}
+    .not-head td.th-count:before {content:'조회수 :'}
+    .not-head td.th-member1:before {content:'약정회원 :'}
+    .not-head td.th-member2:before {content:'정회원'}
+    .not-head td.th-small:before {content:'소위원회'}
+    .not-head td.th-name:before {content:'성명'}
+    .not-head td.th-attach:before {content:'소속'}
+    .not-head td.th-etc:before {content:'비고'}
+    .not-head td.th-money:before {content:'금액'}
+    .not-head td.th-pay:before {content:'결제수단'}
+    .not-head td.th-area:before {content:'지회'}
+    .not-head td.th-day2:before {content:'기부일'}
+
+    .not-head.has-checkbox tr {position:relative;padding:5px 0 5px 30px}
+    .not-head.has-checkbox td {padding:5px 10px}
+    .not-head.has-checkbox tr .th-choice {position:absolute;top:50%;left:0;margin-top:-19px}
+
+    /* search */
+    .paging-area ~ .bbs-search {margin-top:40px}
+
+    /* tab */
+    .page-tab .tab-col .tab-col-item {font-size:12px;padding:8px}
+
+    .ui-tab.type-sub .ui-tab-btns {overflow-x:auto;overflow-y:hidden;white-space:nowrap}
+    .ui-tab.type-sub .ui-tab-btns button {font-size:14px}
+    .ui-tab.type-sub .ui-tab-btn.selected,
+    .ui-tab.type-sub .ui-tab-btn.selected:hover,
+    .ui-tab.type-sub .ui-tab-btn.selected:focus {border-bottom-width:2px}
+
+    /* sort */
+    .sort-area {margin:-10px 0 20px}
+
+    /* view */
+    .view-header-top {display:block;padding:15px 15px 13px}
+    .view-header-info {padding:15px}
+    .view-header-top .view-header-title {display:block;padding:0 15px 15px;margin:0 -15px 12px;border-bottom:1px dashed #ccc;font-size:14px}
+    .view-header-top .view-header-item {display:inline-block;width:auto}
+    .view-header-item {font-size:12px}
+    .view-header-top .view-header-item:first-child {padding-left:25px}
+    .view-contents {padding:20px 15px}
+    .view-contents p {font-size:12px}
+    .view-contents .attach-area {margin-top:40px}
+    .view-contents p + p {margin-top:20px}
+
+    .view-type2 {display:block;table-layout:inherit}
+    .view-type2 [class*='view-'] {display:block;width:100%}
+    .view-desc {margin-top:30px}
+    .view-desc dt {margin-top:12px}
+    .view-desc dd {margin-top:3px}
+    .view-type3 [class*='view-'] {float:none}
+    .view-type3 .view-img {margin-right:0;text-align:center}
+
+    /* attach-box*/
+    .attach-area {padding:15px 20px}
+    .attach-box {display:block;width:100%;font-size:12px}
+    .attach-box .attach-box-tit {display:block;margin-bottom:8px}
+    .attach-box .attach-box-content {display:block}
+    .attach-box .attach-item {font-size:12px}
+
+    .prenet-item dt {padding-left:30px}
+    .prenet-item dd.prenet-day {display:none}
+    .prenet-item dd .clamp {max-width:calc(100% - 35px)}
+    .prenet-item dt i {left:16px}
+
+    /* gallery list */
+    .gallery-list li {width:48.5%;margin:0 3% 20px 0}
+    .gallery-list li:nth-child(2n) {margin-right:0}
+    .gallery-list li:nth-child(2n+1) {clear:both}
+    .gallery-tit {margin-top:10px;font-size:14px;line-height:18px}
+
+    .gallery-list.type-person li:nth-child(2n+1) {clear:right}
+    .gallery-list.type-person li:nth-child(4n+1) {clear:both}
+    .gallery-list.type-person li {width:23.125%;margin-right:2.5%}
+    .gallery-list.type-person li:nth-child(2n) {margin-right:2%}
+    .gallery-list.type-person li:nth-child(4n) {margin-right:0}
+
+    /* 지회 */
+    /*.fake-table-box .fake-table-item {float:none;width:100%}*/
+    .fake-table-item .fake-table-th {width:120px;padding-left:12px}
+    .fake-table-item .fake-table-td {padding:10px 12px}
+
+    .person-area {margin-top:40px}
+    .person-item {display:block;padding:0;position:relative}
+    .person-item:after {content:'';display:block;clear:both}
+    .person-item [class^="person-col-"] {display:block}
+    .person-item .person-col-tit {position:absolute;left:0;top:0;width:146px;padding-top:0}
+    .person-item .person-position {width:100%;height:30px;line-height:30px;border-radius:0}
+    .person-item .person-time {font-size:14px;height:30px;line-height:30px;margin-top:0}
+    .person-item .person-col-photo {float:left;padding-top:60px}
+    .person-item .person-col-info {float:left;width:calc(100% - 146px);padding-left:30px}
+    .person-item .person-name {font-size:18px}
+    .person-item .person-txt {font-size:14px}
+
+    .person-area.item-col2 .person-item {float:none;width:100%;padding:0 !important}
+    .person-area.item-col1 .person-item ~ .person-item,
+    .person-area.item-col2 .person-item ~ .person-item {margin-top:30px}
+    .person-area.item-col1 .person-item .person-col-photo,
+    .person-area.item-col2 .person-item .person-col-photo {margin:0 25px;padding-left:0}
+    .person-area.item-col1 .person-item .person-col-info,
+    .person-area.item-col2 .person-item .person-col-info {width:calc(100% - 150px)}
+
+    /* 인사말 */
+    .greeting-area {padding:40px 10px 0}
+    .greeting-area .owner-info {width:150px}
+    .greeting-area .owner-greeting {padding-left:20px}
+    .greeting-area .greeting-txt01 {font-size:18px;line-height:26px}
+    .greeting-area .greeting-txt02 {margin-top:15px}
+
+    /* 조직소개 */
+    .img-with-txt {overflow:visible;padding:0}
+    .img-with-txt .img-area.type-right,
+    .img-with-txt .img-area {float:none;margin:0 auto;width:300px}
+    .img-with-txt .text-area {margin-top:20px;padding-left:0}
+    .img-with-txt .img-box img {width:100%}
+
+    .wide-scroll {padding-bottom:10px;margin-bottom:-10px}
+     /*.wide-scroll table {width:auto}*/
+    .tb-type_d .wide-scroll table {width:auto}
+    .wide-scroll table th,
+    .wide-scroll table td {white-space:nowrap}
+    .wide-scroll.members .no-line {padding:0 29px}
+    .wide-scroll.members .td-point {padding:0 24px}
+    .wide-scroll.members table {width:auto}
+
+    .ui-togglebtn.type-sum button {width:55px !important;padding:0 ;float:left;margin:0 4px 4px 0 !important}
+    .ui-togglebtn.type-sum .mgl-s {clear:left}
+    .ui-togglebtn.type-sum .inp-base {width:calc(100% - 80px);float:left}
+    .ui-togglebtn.type-sum .txt-mark {float:left}
+
+    .day-form .day-txt {margin:0 8px 0 4px}
+    .day-form-row .sel_small {width:70px}
+
+    .tb-type_a .radio-group,
+    .tb-type_a .txt-group,
+    .tb-type_a .check-group {margin-top:0}
+
+    .donation-guide {padding:15px 0 15px;margin-top:30px}
+    .donation-guide-tit {margin-bottom:15px;font-size:14px}
+    .donation-guide-item {padding:0;width:32%;vertical-align:top;text-align:center;font-size:13px}
+    .donation-guide-item strong {font-size:16px}
+    .donation-guide-item:before {margin:0 0 10px 0}
+    .donation-guide-item > div {display:block}
+    .donation-guide-item strong {margin-top:5px}
+    .donation-guide-txt {margin-top:15px}
+    .tab-desc {font-size:13px;line-height:18px;margin:15px 0 30px}
+
+    .box-pink.type-b,
+    .box-pink {margin-top:30px;padding:0}
+    .box-pink .tb-type_a {padding:0 10px}
+    .box-pink .box-pink-wrap .tb-type_a {padding:0}
+    .box-pink-wrap {width:100%;padding:20px}
+
+    .mb-type tbody,
+    .mb-type tr,
+    .mb-type table {display:block}
+    .mb-type th {display:block;padding:10px 10px 0;background:transparent;border:0}
+    .mb-type td {display:block;padding:5px 10px 10px;border:0}
+    .mb-type label br {display:none}
+    .view-data.mb-type tr ~ tr {border-top:1px dashed #ccc}
+    .view-data.mb-type tr td ~ th {border-top:1px dashed #ccc}
+
+    .sign-wrap {max-width:100%}
+
+    .ui-select select {background-color:#fff}
+    .phone-area .inp-base {width:calc(33.33% - 13px)}
+    .jumin-area .inp-base {width:calc(50% - 9px)}
+    .addcert .phone-area .btn-base-imp {width:100%;margin:10px 0 0 0}
+
+    .field-wrap {width:100%}
+    .terms-group .checkbox {margin:25px 0 10px}
+    .wide-scroll table td {white-space:nowrap}
+    /* .phone-area button.small,*/
+    .phonecert-area button.small {width:80px !important}
+    /* sb contents */
+    .sb-box {margin-top:0;padding:30px 0}
+    .sb-contents-desc {margin-top:12px;padding-bottom:12px}
+    .btn-area:after {content:"";display:block;clear:both}
+    .btn-area .fl-item-r {position:relative;right:0}
+    .btn-area .fl-item-l {position:relative;left:0}
+    .addcert-2 .phone-area .btn-base-imp {margin:5px 0 0 0}
+    .ps-verify input.inp-base, .ps-verify input,
+    .ps-box > span .inp-base {width:100%}
+
+    /* credit card, ars */
+    .donate-list {padding:30px 12px 20px}
+    .donate-list-item .item-txt {display:block;position:relative;margin:15px 0 0;max-height:70px;min-height:70px}
+    .donate-list-item i.ico-credit {margin-left:15px}
+    .donate-list-item i.ico-phone {margin-left:25px}
+    .donate-list-item strong {position:absolute;bottom:0;margin-top:7px;width:100%;font-size:16px;text-align:center}
+    .donate-tit {line-height:20px}
+    .donate-desc {margin-top:25px}
+
+    /* point */
+    .point-card-list li {min-height:340px;max-height:340px;padding:0 15px}
+    .point-card-tit {font-size:14px;line-height:16px;min-height:34px}
+
+    /* 사랑의열매는*/
+    .about-area {padding-top:35px}
+
+    /* history */
+    .history-wrap {margin-top:50px}
+    .history-wrap .history-item .year-txt {font-size:24px}
+    .history-wrap.line-type {padding-top:35px}
+
+    .area-type-a {padding:35px 0}
+    .area-type-a p {margin-top:15px}
+    .area-type-a img {width:50%}
+    .list-dltit {margin-top:35px}
+    .list-dltit-img img {width:100%}
+    .area-type-b {padding:10px 0}
+    .area-type-b p {padding:0 10px}
+    .cckgrop-list h5 {font-size:16px}
+    .cckgrop-list {padding:25px 0 }
+    .cckgrop-list > div:first-child {margin-top:0}
+    .cckgrop-list > div {padding-left:60px;width:100%;min-height:0;margin-top:40px}
+    .cckgrop-list > div:before {width:50px;height:50px;background-size:200px;left:0}
+    .cckgrop-list th {text-align:left}
+    .cckgrop-list .col-th {width:60px}
+    .cckgrop-list > div.n1:before {background-position:0 0}
+    .cckgrop-list > div.n2:before {background-position:-50px 0}
+    .cckgrop-list > div.n3:before {background-position:-100px 0}
+    .cckgrop-list > div.n4:before {background-position:-150px 0}
+    .cckgrop-list > div.n5:before {background-position:0 -50px}
+    .cckgrop-list > div.n6:before {background-position:-50px -50px}
+    .cckgrop-list > div.n7:before {background-position:-100px -50px}
+    .cckgrop-list > div.n8:before {background-position:-150px -50px}
+
+    .area-type-item {margin-top:20px;padding:0}
+    .area-type-item strong {font-size:20px;margin-top:5px}
+    .area-type-item:before {width:50px;height:50px;background-size:250px;left:0;margin-right:10px}
+    .cckgrop03 .area-type-item.n1:before {background-position:0 0}
+    .cckgrop03 .area-type-item.n2:before {background-position:-50px 0}
+
+    .list-tbl dt {width:100%;padding-left:60px;display:block;text-align:left}
+    .list-tbl dt:before {width:50px;height:50px;background-size:250px;left:0;margin-right:10px;margin-top:-25px}
+    .list-tbl .n1 dt:before {background-position:-100px 0}
+    .list-tbl .n2 dt:before {background-position:-150px 0}
+    .list-tbl .n3 dt:before {background-position:-200px 0}
+    .list-tbl dd {width:100%;padding:0;display:block}
+    .list-tbl dl {padding:15px 0}
+
+    .gallery-list-tit .sort-area {position:relative;margin:20px 0 0}
+
+    .legacy-info {margin:35px 0}
+    .legacy-info img {float:none;display:block;width:90px;margin:0 auto}
+    .legacy-info dl {float:left;width:100%}
+    .legacy-info dt {margin-bottom:10px}
+
+    .legacy-step {width:100%;position:relative; text-align:center;padding:20px 0}
+    .legacy-step ol {margin-bottom:15px}
+    .legacy-step li {display:inline-block;position:relative;vertical-align:top;padding:0 4px}
+    .legacy-step li::before {display:none}
+    .legacy-step li b {position:absolute;display:block;width:30px;height:30px;border-radius:50%;background:#cb0802;color:#fff;text-align:center;padding:5px 0 0;font-size:12px;font-weight:600;z-index:1;left:50%;margin-left:-15px;top:-13px}
+    .legacy-step li p {position:relative;display:block;width:80px;height:80px;border-radius:50%;border:2px solid #afa49a;text-align:center;font-size:12px;font-weight:600;padding:25px 0 0}
+    .legacy-step li:first-child p {padding:15px 0 0}
+
+    .legacy-ex {width:100%;height:auto;padding:20px;overflow:hidden;background:#aba095 url(/common/img/contents/legacy_ex.png) no-repeat 100% 100%;background-size:contain}
+    .legacy-ex-tit {float:left;widows:100%}
+    .legacy-ex-tit .table-tit {margin:0 0 15px;color:#fff;width:100%;padding-bottom:15px;border-bottom:1px solid #c4bdb5}
+    .legacy-ex-tit p {color:#fff;font-size:14px}
+    .legacy-ex-pht {float:right;width:auto;margin-top:20px}
+    .legacy-ex-pht > div {background:#fff;padding:5px 5px 20px;box-shadow:3px 3px 5px rgba(0,0,0,0.1);float:left;text-align:center;margin:0 5px;font-size:12px}
+    .legacy-ex-pht > div img {width:100px}
+    .legacy-ex-pht p {margin-top:5px}
+
+    .cpl-tbl {margin-top:15px}
+    .cpl-tbl .col-1 {width:80px}
+    .cpl-tbl .col-2 {width:110px}
+    .cpl-tbl .col-3 {width:auto}
+    .cpl-tbl tbody th {background:#fff}
+    /*.mb-type li {display:block; text-align:center;margin:10px 0}*/
+
+    .cckgrop16-ul ul {width:100%;display:inline-block;margin:3px 0}
+    .bul-dot {font-size:14px}
+
+    /* 특별모금 */
+    .campaign-contents {margin-top:20px}
+    .campaign-contents .page-tab {margin-bottom:30px}
+
+    /* 아너소사이어티 */
+    .donation-btn-type2 {margin-top:20px;padding-bottom:0;font-size:0}
+    .donation-btn-type2 button ~ button {margin-left:4px}
+    .donation-btn-type2 .btn-base-line {position:static}
+    .area-type-a .area-type-tit {margin-bottom:0}
+    .area-type-a .area-type-tit2 {font-size:15px;line-height:20px}
+    .area-type-a .area-type-tit2 br {display:none}
+    .donation-desc li span {margin-left:0}
+
+    /* 유산기부 */
+    .partici-list, .partici-list li {display:block}
+    .partici-list li ~ li {padding-left:0;margin-left:0}
+    .partici-list li ~ li p {border-top:0}
+    .partici-list li p {width:100%;height:100%;min-height:100px;border-radius:0}
+    .partici-use .partici-txt {margin-top:20px}
+
+    /* form */
+    .phone-area button.small {width:100%;margin:10px 0 0 0}
+    .class-info {padding:5px 10px;background-color:#f7f7f7}
+    .class-info:first-child {padding-top:10px}
+    .class-info:last-child {padding-bottom:10px}
+    .class-info:first-child > .class-info-t {margin-top:5px}
+
+    /* 희망자산나눔 */
+    .donation-find-list li {width:105px}
+    .donation-find-list li ~ li {margin-left:4px}
+
+    /* 사회공헌 현물기부 */
+    .area-type-a.type3 {padding:30px 0 20px}
+    .donation-article.type4 .donation-find-list li {width:130px}
+    .donation-article.type4 .donation-find-list li ~ li {margin-left:0}
+
+
+    /* 사회공헌 성금기부 */
+    .donation-article-img, .donation-article-inner .donation-desc-box {float:none}
+    .donation-article-img {margin-bottom:10px}
+    .desc-box-txt {margin:5px 0 8px;font-size:14px;line-height:18px}
+
+    /* 나눔 */
+    .split-info [class^="split-inner-"] {height:50px;line-height:50px;font-size:16px}
+    .split-info .split-list .split-item .split-item-title {height:40px;line-height:40px;font-size:14px}
+
+    /* camp */
+    .camp_info .camp-info-tit {font-size:14px}
+    .camp_info .camp-info-txt {font-size:13px}
+    .gallery-list.col-3 li {margin-right:4.1%}
+    .gallery-list.col-3 li:nth-child(2n+1) {clear:right}
+    .gallery-list.col-3 li:nth-child(3n+1) {clear:left}
+
+    /* funding */
+    .list-funding .funding-item {width:48%;margin-right:4%}
+    .list-funding .funding-item:nth-child(3n) {margin-right:4%}
+    .list-funding .funding-item:nth-child(2n) {margin-right:0}
+    .list-funding .funding-item:nth-child(2n+1) {clear:left}
+    .list-funding .funding-item:nth-child(3n+1) {clear:right}
+
+    .funding-data .funding-data-name {width:50%}
+    .funding-data .funding-data-name {width:45%}
+
+    .donate-list-area.type_small .donate-list-item strong {display:inline-block;position:static;text-align:left}
+    .donate-list-area.type_small .donate-list-item ~ .donate-list-item {padding-left:40px}
+
+    /* 펀딩신청하기 */
+    .bank-num-text {margin:4px 0 0}
+
+    /* 기부내역 조회 */
+    .donation-box {padding:30px 15px 22px;text-align:left}
+    .donation-date, .donation-price {padding-left:16%}
+    .donation-box:before {top:50%;margin-top:-25px}
+    .donation-date:before {left:5%}
+    .donation-price:before {left:10%}
+    .donation-box .donation-tit {font-size:13px}
+    .donation-box .donation-text {margin-top:5px;font-size:15px}
+
+    /* 나의 기부 설계 */
+    .box-mydonation {margin-top:35px;padding:30px}
+    .mydonation-find img {width:30%}
+    .text-mydonation {font-size:16px;line-height:26px}
+    .text-mydonation-info {font-size:20px}
+    .box-mydonation .btn-area {margin-top:15px}
+    .box-mydonation-result {margin-top:40px}
+    .box-mydonation-group {margin-top:20px}
+    .box-mydonation-group .list-donation:nth-child(n+2) {margin-top:30px}
+
+    /* 영역별 지원안내 */
+    .ui-acco.type-business .ui-acco-pnl {padding:30px 0}
+    .type-business .business-wrap .business-tit {font-size:16px;padding-left:20px}
+    .type-business .business-text br {display:none}
+    .business-img.type-b .img-item {width:auto}
+    .business-img .img-item {width:32%}
+    .business-img .img-item ~ .img-item {margin-left:2%}
+    .img-with-txt .type-right ~ .text-area {padding-right:0}
+
+    /* 소다수나눔 캠페인 */
+    .section-donation-how {padding:20px 30px}
+    .donation-how-inner {margin-top:35px}
+    .donation-how-list {margin:30px 0 0 -30px}
+
+    /* 대관 */
+    .coronation-info .img-with-txt .text-area {padding-left:0}
+    .coronation-box {padding:20px 25px}
+    .coronation-box_tb .coronation-box-col {display:block;width:100%}
+    .coronation-box_tb .coronation-box-col ~ .coronation-box-col {margin-top:5px;text-align:left}
+
+    /* sitemap */
+    .sitemap-top {padding:15px}
+    .sitemap-top .sitemap-top-col {display:block}
+    .sitemap-top .sitemap-top-col.sitemap-top-home {width:100%;text-align:left;margin-bottom:5px}
+    .sitemap-top .list-area {overflow-x:auto;overflow-y:hidden;padding-bottom:10px;margin-bottom:-10px;white-space:nowrap}
+    .sitemap-top .list-area .area-item {float:none;display:inline-block}
+    .sitemap-top .list-area .area-item:first-child .link-area {padding-left:0}
+
+    /* 결제완료 */
+    .icon-payment {display:none}
+    .payment-tit {font-size:26px;line-height:32px}
+    .base-body.type-bg .table-tit {margin:40px 0 14px}
+    .base-body.type-bg .btn-area {margin-top:30px}
+
+    /* ars */
+    .ars-area .ars-list .ars-item {padding-left:120px;}
+    .ars-area .ars-list .ars-item ~ .ars-item {margin-left:50px}
+
+    .tb-type_b.business-tb table {table-layout:auto;width:auto}
+    .tb-type_b.business-tb th,
+    .tb-type_b.business-tb td {padding:0 4px}
+    .tb-type_b.business-tb tbody th {padding:0 8px}
+
+
+	    /* covid*/
+	
+        .row.width50 .column:first-child{max-width:100%;}
+        .row.width50 .column{max-width:100%;}
+        
+        
+        .row.width50_1 .column:first-child{max-width:100%;}
+        .row.width50_1 .column{max-width:100%; padding-top:14px;}
+        
+        
+        .Covid-container .covid_tab ul#menu li{width:100%; height:60px; margin-top:2px;  
+            margin-right: 0;}
+        .Covid-visual {height: 500px; }
+        .Covid-visual .visual_txt{left:30px;}
+        .Covid-visual .visual_txt h2 {font-size:28px; letter-spacing:-1px;} 
+        .Covid-visual .visual_txt h2 .stit {font-size: 14px; letter-spacing:-1px;}
+        /*  */
+        
+    
+    /* tiktok */
+    .super_wrap {font-size: 18px;}
+    .super_title{height:226px; background-image:url("/common/img/contents/tiktok/M_title.png");background-repeat:no-repeat;background-size:contain;background-position:center;}
+    .super_title p {top:50%; right:0px; font-size: 18px; }
+    .super_sub1_contents{background-image: none;height: 320px;}
+    .super_sub1_contents .box {width: 170px;height: 252px; }
+    .super_sub1_contents .C_logo {position:absolute; top:0px; right:24px; z-index: 9999; }
+    .super_sub1_contents .C_logo a{display: none;}
+    .super_sub1_contents .C_logo img{position: relative; max-width:60%; top:75px; left:-64px;}
+    .super_sub1_contents .box1{top:0; left:0;}
+    .super_sub1_contents .box2 {top: 0px;right: 2px;}
+    .super_sub1_contents .box3 {display:none;}
+    .super_sub2_w .title {width: 100%; font-size: 18px;}
+    .super_sub2_w .sub-title img{padding:0;}
+    .super_yutube_l img{display:none;}
+    .super_sub2_w .super_yutube_l video{width:320px; top:-20px; left: -30px;}
+    .super_sub2_w .super_yutube p {margin-top: 160px; margin-left: 0%;}
+    .super_sub2_w .super_C_h .S_text {bottom: -57px; left: 20%; font-size: 12px; padding-bottom: 80px;}
+    .super_sub2_w .super_C_h .title {top: -20px; left: 11%; width: 80%;}
+}
+
+@media (max-width:600px) {
+    .donation-info {margin-bottom:40px}
+    .type-inpbtn [class*="btn-base"] {margin:5px 0 0 0 !important}
+    .btn-area [class*="btn-base"] {margin:0}
+    .contents-hd h1 strong, .contents-hd h3 strong {font-size:20px}
+    .prev-menu {padding-left:12px}
+    .next-menu {padding-right:12px}
+    .block-600 {display:block}
+
+    .datepicker-wrap  .txt-mark {display:none}
+    input.hasDatepicker {width:calc(100% - 32px) !important}
+    .ui-tab-type2.col-6 .ui-tab-btns button {width:calc(100% / 3)}
+    .ui-tab-type2.col-6 .ui-tab-btns button ~ button {width:calc((100% / 3) + 1px)}
+    .ui-tab-type2.col-6 .ui-tab-btns button:nth-child(3n+1) {width:calc(100% / 3);margin-left:0}
+    .ui-tab-type2.col-6 .ui-tab-btns button:nth-child(n+4) {margin-top:-1px}
+
+    .ui-tab-type2.col-4 .ui-tab-btns button {width:50%}
+    .ui-tab-type2.col-4 .ui-tab-btns button:nth-child(n+3) {margin-top:-1px}
+    .ui-tab-type2.col-4 .ui-tab-btns button:nth-child(2n+1) {width:50%;margin-left:0}
+    .ui-tab-type2.col-4 .ui-tab-btns button ~ button {width:calc(50% + 1px);margin-left:-1px}
+
+    .ui-tab-type2.col-5 .ui-tab-btns button {width:calc(100% / 3)}
+    .ui-tab-type2.col-5 .ui-tab-btns button ~ button {width:calc((100% / 3) + 1px)}
+    .ui-tab-type2.col-5 .ui-tab-btns button:nth-child(n+4) {margin-top:-1px}
+    .ui-tab-type2.col-5 .ui-tab-btns button:nth-child(4) {width:50%;margin-left:0}
+    .ui-tab-type2.col-5 .ui-tab-btns button:nth-child(5) {width:calc(50% + 1px)}
+
+    .mg-t-l {margin-top:50px}
+    .mg-t-m {margin-top:20px}
+
+    .clamp {max-width:calc(100% - 16px)}
+
+    [class*="btn-base"] {width:100% !important}
+    [class*="btn-base"] ~ [class*="btn-base"] {margin-top:4px}
+
+    /* sub contents */
+    .contents-hd h3 span {display:none}
+    .contents-menu-nav button {top:10px}
+    .tb-type_a .post-code input[type="text"].in-w02 {Width:100%;margin-bottom:4px}
+/*    .email-ico {width:6%;margin:0 2%}*/
+    .email-area input[type="text"] {width:calc(50% - 13px)}
+    .birthday-form-row {display:block}
+    .birthday-form-row .sel_small {width:calc(100% - 32px)}
+    .birthday-form-row ~ .birthday-form-row {margin-top:4px}
+    .birthday-form .birthday-txt {margin:0 0 0 8px}
+    .post-code input[type='text'] {width:100%}
+    .post-code [class*="btn-base"].small {float:none;margin:4px 0 0}
+    .birthday-form-row .sel_smalls {width:80px}
+    /* input */
+    input[type="text"], input[type="date"], input[type="password"] {width:100%}
+
+    /* search */
+    .search-area {width:100%}
+    .search-area .search-col {display:block;width:100% !important}
+    .search-area .search-col.int {padding:0 ;margin:8px 0}
+
+    /* sort */
+    .sort-area .sort-area-item {width:100%}
+
+    /* view */
+    .view-type2 .view-img button ~ button {margin-left:0}
+
+    /* bbs view */
+    .bbs-link-area li ~ li {margin-top:15px}
+    .bbs-link-area li .newspaper-link {display:block}
+    .newspaper-link .bbs-logo {display:block;padding:10px;width:100%}
+    .newspaper-link .news-area {display:block;padding:15px}
+    .view-contents p.bbs-list-tit {font-size:14px}
+    .view-contents p.bbs-list-txt {margin-top:10px;font-size:12px}
+    .bbs-logo {display:none}
+    .news-area {padding-left:0}
+    .video-area {margin-bottom:0}
+
+    /* campaign */
+    .campaign-slogon dt {font-size:14px}
+    .campaign-slogon dd ~ dt {margin-top:10px}
+
+    /* gallery list */
+    .gallery-list li {width:100%;margin:0 0 20px}
+
+    /* qna */
+    .ui-acco.type-qna {border-top:2px solid #121212;margin-top:20px}
+    .ui-acco.type-qna .ui-acco-btn {position:relative;padding:14px 30px 15px 30px;min-height:0;color:#555;font-weight:400;font-size:14px}
+    .ui-acco.type-qna .ui-acco-btn:before {content:"";display:block;position:absolute;top:12px;left:10px;width:11px;height:11px;background:url(/common/img/common/ico_qna.png) no-repeat 0 0;background-size:22px}
+    .ui-acco.type-qna .ui-acco-btn.selected {color:#790401}
+    .ui-acco.type-qna .ui-acco-btn.selected:before {content:"";background-position:0 -11px}
+    .ui-acco.type-qna .ui-acco-wrap {border-bottom:1px solid #ccccc0}
+    .ui-acco.type-qna .ui-acco-pnl {background:#fef2f2;padding:15px 30px 15px 30px;font-size:14px;line-height:20px}
+    .ui-acco.type-qna .ui-acco-pnl:after {content:"";display:block;position:absolute;top:18px;left:10px;width:11px;height:11px;background:url(/common/img/common/ico_qna.png) no-repeat -11px 0;background-size:22px}
+    .ui-acco.type-qna .ui-acco-pnl > * + p {margin-top:15px}
+    .ui-acco.type-qna .ui-acco-btn .ui-acco-arrow {right:10px;top:20px;width:7px !important;height:4px !important;min-height:4px !important;background:url(/common/img/common/ico_comb.png) no-repeat 0 0}
+    .ui-acco.type-qna .ui-acco-btn.selected .ui-acco-arrow {display:block;background:url(/common/img/common/ico_comb_on.png) no-repeat 0 0}
+
+    .tab-scroll-wrap .ui-tab-btn {flex:1 0 0;padding:0}
+
+    /* 지회 */
+    .fake-table-item {display:block}
+    .fake-table-item .fake-table-th {display:block;width:100%;padding:10px;text-align:center;border-bottom:1px dashed #d4d4d4}
+    .fake-table-item .fake-table-th ~ .fake-table-th {border-top:1px solid #d4d4d4}
+    .fake-table-item .fake-table-td {display:block;padding:15px}
+    .fake-table-item .fake-table-td p {font-size:12px}
+    /*.fake-table-item .fake-table-th {width:100px;padding-left:15px;font-size:12px}
+    .fake-table-item .fake-table-td {padding:15px}
+    .fake-table-item .fake-table-td p {font-size:12px}*/
+
+    .person-item .person-col-photo {width:120px;float:none;margin:0 auto;padding-top:0}
+    .person-item .person-col-tit {width:120px;position:static;margin:0 auto}
+    .person-item .person-position {font-size:14px}
+    .person-item .person-col-info {width:100%;padding:0;margin-top:20px}
+    .person-item .person-txt {font-size:12px}
+
+    /* table col */
+    .col-w00 {width:60px}
+    .col-w01 {width:80px}
+    .col-w02 {width:80px}
+    .col-w04 {width:27%}
+    .col-w05 {width:27%}
+    .tb-type_c th, .tb-type_c td {padding:15px}
+
+    /* sb contents */
+    .sb-box {padding:25px 15px}
+    .sb-box-inner {max-width:100%}
+    .sb-contents-desc {margin-top:12px;padding-bottom:12px}
+    .sb-content-tbl {padding:10px 0}
+    .sb-content-tbl colgroup {display:none}
+    .sb-content-tbl th, .sb-content-tbl td {display:block;padding:5px 0 0;width:100%}
+    .sb-content-tbl td {padding:5px 0 10px}
+    .sb-content-tbl {margin-bottom:25px}
+    .phone-area .table-cell [class*='btn-base'] {float:none;margin-left:0;margin-top:7px}
+    .ps-box >span {width:calc(33% - 13px)}
+    .phone-area .table-cell.privacy-area {margin-top:12px}
+    .privacy-box {margin-top:12px}
+    .verify-area .code-txt {right:0}
+    .phone-area .table-cell .btn-area-r [class*='btn-base'] {margin-top:0}
+    .sb-box .btn-area {margin-top:0}
+
+    .phone-area .btn-base-imp {margin:10px 0 0 0 !important}
+
+    /* credit card, ars */
+    .banner-img {margin-top:30px}
+
+    /* credit card, ars */
+    .donate-list {margin-top:30px}
+    .donate-tit {margin-bottom:20px}
+    .donate-list-item p {font-size:13px;line-height:16px}
+    .donate-list-item strong {font-size:14px}
+
+    .donate-select-area {margin-top:25px}
+    .donate-select {padding:17px 15px 20px}
+    .select-radio-group > span {display:block}
+    .select-radio-group > span ~ span {margin:10px 0 0}
+    .select-desc {line-height:16px}
+
+    .select-sub-tit {margin-top:25px;padding-bottom:15px}
+    .point-card-list {padding-bottom:25px}
+
+    /* point */
+    .point-card-list li {float:none;width:100%;margin-top:30px;min-height:320px;max-height:inherit}
+    .point-card-tit {min-height:auto;font-size:16px}
+    .point-card-list button.btn-base-imp.small {position:static;margin:20px 0 0}
+    .point-card-list .card-img img {width:100%}
+
+    .person-area.item-col1 .person-item .person-col-photo,
+    .person-area.item-col2 .person-item .person-col-photo {margin:0 auto}
+    .person-area.item-col1 .person-item .person-col-info,
+    .person-area.item-col2 .person-item .person-col-info {width:100%;padding-left:0}
+    .person-item .person-txt.small {font-size:13px}
+    .person-item .person-txt.small br {display:none}
+
+    /* 무통장 입금 기부 */
+    .fake-table-box.type2 {padding-bottom:30px}
+    .fake-table-box.type2 .fake-table-th {width:100%;padding:10px}
+    .fake-table-box.type2 .fake-tit {font-size:16px}
+    .account-num {margin-top:5px;font-size:13px;line-height:18px}
+    .account-num .sprite-group-tel {margin-right:6px}
+    .account-holder {margin-top:0px;font-size:13px}
+    .account-holder span {display:inline-block;margin-right:4px}
+    .fake-table-box.type2 .fake-table-td p {line-height:16px}
+
+    /* 찾아오시는 길 */
+    .map-adress {font-size:14px;line-height:24px}
+    .map-area .root_daum_roughmap {height:300px !important}
+    .how-to-section {margin-top:20px;padding-left:35px}
+    .how-to-section [class^="sprite-map-"] {top:5px;background-size:auto 50px;width:25px;height:25px}
+    .how-to-section .sprite-map-2 {background-position-x:-25px}
+    .how-to-section .sprite-map-3 {background-position-x:-50px}
+    .how-to-section .sprite-map-4 {background-position-x:-75px}
+    .how-to .sb-contents-tit {margin-top:12px}
+    .how-to-section .how-to-txt,
+    .how-to-section .how-to-dl dt,
+    .how-to-section .how-to-dl dd {font-size:13px;line-height:20px}
+
+    /* history */
+    .history-wrap {margin-top:35px}
+    .history-wrap .history-item {width:100%;margin:0 !important;padding:0 0 20px 10px}
+    .history-wrap .history-item:last-child {padding-bottom:0}
+    .history-wrap .history-item .year-txt,
+    .history-item .history-info .history-info-txt {text-align:left}
+    .history-item .history-info .history-info-month {float:left}
+    .history-wrap .history-item ~ .history-item:after {top:34px}
+    .history-wrap .history-item:before {right:auto;left:5px !important;bottom:-35px}
+    .history-wrap .history-item:after {right:auto;left:0 !important}
+    .history-wrap .history-item .year-txt {font-size:20px}
+    .history-wrap .history-item .history-info {margin-top:10px}
+
+    .history-item .history-info .history-info-img {margin:10px 0 10px 74px !important}
+
+    /* 기부 */
+    .chk-group, .radio-group {margin-bottom:-10px}
+    .chk-group .checkbox,
+    .radio-group .radio {margin-bottom:10px;display:inline-block}
+    .donation-guide-txt .btn-base-bline {margin:10px 0 0 0 !important}
+    .fileupload-area .inp-base {width:100%}
+    .fileupload-area button.small {margin:5px 0 0 0}
+    .terms-group .checkbox label,
+    .donation-guide-item strong {font-size:14px}
+
+    .area-type-a p br {display:none}
+
+    /* 특별모금 */
+    .campaign-contents .page-tab {margin-bottom:20px}
+
+    /* 아너소사이어티 */
+    .donation-article .donation-desc {padding:17px 12px 15px}
+    .donation-btn-type2 button ~ button {margin-left:0}
+    .donation-desc.type2 li {display:block}
+    .donation-desc.type2 li p {display:block}
+    .donation-desc li span {margin-left:4px}
+
+    /* 유산기부 */
+    .donation-article p.donation-desc {padding:17px 12px 15px}
+    .partici-use {padding:35px 10px}
+    .partici-list li {font-size:14px}
+    .partici-list li p {min-height:90px}
+    .partici-use .partici-txt {text-align:left}
+
+    .legacy-list li dl {display:block;padding:0;margin:15px 0 0;width:100%;text-align:center}
+    .legacy-list li dd {margin-top:0}
+    .legacy-list li .img {display:block;width:100%;text-align:center}
+    .legacy-list li .img img {width:auto}
+
+    /* form */
+    .form-wrap {width:100% !important}
+    .form-wrap .form-col.form-data, .form-wrap .form-col.form-data.size-b {display:block;width:100%}
+    .form-wrap .form-col.form-data ~ .form-col {display:block;padding:3px 0 0 0}
+    .date-picker-line {display:none}
+
+    /* 희망자산나눔 */
+    .donation-find-list {margin-top:10px}
+    .donation-find-list li {float:none;display:inline-block;vertical-align:top}
+
+    /* 사회공헌 성금기부 */
+    .donation-article-img {margin-right:0;text-align:center}
+    .donation-article-img img {width:50%}
+    .donation-article-inner .donation-desc .btn-area-l button ~ button {margin-left:0}
+    .donation-article-inner .donation-desc {padding:0}
+    .donation-section .table-tit ~ .table-tit,
+    .area-type-a.type2 + .donation-section .table-tit ~ .table-tit {
+        margin:40px 0 15px;
+        font-size:17px;
+    }
+    .progress-area {display:block;padding:20px 10px 30px}
+    .progress-item {display:block}
+    .progress-item ~ .progress-item {margin-top:30px}
+    .progress-img {margin-bottom:12px}
+    .progress-txt, .progress-txt span {margin-top:4px}
+
+    /* 나눔 */
+    .area-type-a.type4 .area-type-tit ~ p br {display:none}
+    .split-info {margin-top:35px}
+    .split-info .split-title {margin-bottom:20px;font-size:15px}
+    .split-info [class^="split-inner-"] {height:auto;width:100%;min-width:0;font-size:13px}
+    .split-info .split-step-subtit {font-size:12px;top:-1px}
+    .split-info .list-split {padding:15px}
+    .split-info .split-list .split-item {width:100%;display:block;height:auto}
+    .split-info .split-list .split-item ~ .split-item {margin:10px 0 0 0}
+    .split-info .list-split .list-split-item {font-size:12px}
+
+    /* camp */
+    .mg-b-m {margin-bottom:12px}
+    .mg-t-ml {margin-top:35px}
+    .camp_info {padding:20px 10px}
+    .camp_info .camp-info-tit {padding-left:20px;text-indent:-20px}
+    .gallery-list.col-3 li:nth-child(3n+1) {clear:right}
+    .gallery-list.col-3 li:nth-child(2n+1) {clear:both}
+    .gallery-list.col-3 li:nth-child(3n) {margin-right:3%}
+    .gallery-list.col-3 li {width:48.5%;margin:0 3% 20px 0}
+    .gallery-list.col-3 li:nth-child(2n) {margin-right:0}
+
+    .gallery-list.col-2 li {width:48.5%;margin:0 3% 20px 0}
+    .gallery-list.col-2 li:nth-child(2n) {margin-right:0}
+
+    /* 봉사 */
+    .title_wrap .sort-area {top:-5px}
+
+    /* 착한가정 */
+    .join-benefit-list {padding:20px 0}
+    .join-benefit-plate img {width:100%}
+    .join-benefit-list li ~ li {margin-top:25px}
+
+    /* 착한가게 */
+    .join-benefit-box {padding:20px 0}
+    .benefit-img-box {float:none;margin-right:0;text-align:center}
+    .benefit-desc-box {margin-top:30px}
+
+    /* sort tab */
+    .sort-tab .button_sort {font-sizE:16px;margin-right:20px}
+    .sort-tab .button_sort ~ .button_sort {margin-left:24px}
+
+    /* funding */
+    .funding-area {padding-top:20px}
+    .sort-tab ~ .list-funding {margin-top:30px}
+    .list-funding .funding-item {float:none !important;width:100%;margin-right:0 !important}
+    .funding-item .funding-info .funding-title {font-size:16px;line-height:22px;max-height:44px}
+
+    .end-funding-area .funding-title p {font-size:21px}
+    .funding-infobox .text-funding-title {font-size:19px}
+    .funding-infobox .text-funding {margin:8px 0 25px;font-size:13px}
+
+        /* 추가200305 hsy */
+        .funding--section ul li{padding-top:25px;}
+        .funding--section ul li:last-child{padding-bottom: 25px;}
+        .funding--section .funding--title{padding-top:25px;font-size:13px;}
+        .funding--title p{ padding-top:15px;} 
+        .funding--section ul li.funding-text{ max-width:90%; font-size:13px; margin:0 auto; text-align: center;}
+        .funding--section ul li.funding-text strong{font-size: 13px }
+        
+         /* end */
+
+
+    .funding-infobox .text-funding:last-child {margin:8px 0 11px}
+    .funding-infobox .text-funding-end {font-size:17px}
+    .funding-infobox .text-funding-end span {margin-top:15px;font-size:13px}
+
+    .end-funding-area .funding-data {padding:15px 0;display:block}
+    .funding-data .funding-data-col {display:block;width:100% !important}
+    .funding-data .funding-data-col.funding-data-day {padding:15px 0;margin:10px 0;background-color:#f7f7f7}
+
+    .end-funding-area .btn-area .btn-col {display:block;margin:0}
+    .end-funding-area .btn-area .btn-col ~ .btn-col {margin-top:10px}
+    .end-funding-area .btn-area .btn-col .text-data {min-width:100%}
+
+    .donate-list-area.type_small {width:100%;text-align:center;margin:0}
+    .donate-list-area.type_small .donate-list-item {display:inline-block;text-align:center;padding-right:20px}
+    .donate-list-area.type_small .donate-item-box .donate-icon {display:block;margin:0 auto;width:auto}
+    .donate-list-area.type_small .donate-item-box .item-txt {display:block}
+    .donate-list-area.type_small .donate-list-item strong {text-align:center}
+    .donate-list-area.type_small .donate-list-item ~ .donate-list-item {padding-left:20px}
+    .donate-list-area.type_small .donate-list-item:last-child {padding-right:0}
+    .donate-list-area.type_small .donate-list-item p {min-height:32px}
+    .donate-list-area.type_small .donate-list-item ~ .donate-list-item:before {height:60px;margin:0;top:10px}
+
+    .donate-list .donate-desc {margin-top:15px}
+
+    /* file upload */
+    .file-upload-group .file-upload {width:calc(100% - 80px)}
+    .file-upload-group {margin-top:4px}
+    .file-upload-group .btn-base {width:auto !important}
+    .reply-btn .file-name {min-width:auto;margin-right:4px}
+
+    /* 펀딩신청하기 */
+    .file-upload-group + .reply-btn {margin-top:8px}
+    .reply-btn-row ~ .reply-btn-row {margin-top:4px}
+
+    .sb-box-inner .sb-contents-desc br {display:none}
+
+    /* 기부내역 조회 */
+    .donation-box {text-align:center}
+    .donation-box:before {display:none}
+    .donation-date, .donation-price {padding-left:15px}
+    .donation-box .donation-text {line-height:18px}
+
+    .contact-wrap span {display:block;text-align:left;margin:0}
+    .contact-wrap span ~ span {margin-top:5px}
+
+    /* 영역별 지원안내 */
+    .ui-acco.type-business .ui-acco-pnl {padding:20px 0}
+    .business-wrap .ui-acco-arrow {width:50px !important}
+    .business-wrap .ui-acco-arrow:before {width:16px;height:16px;background-size:16px auto}
+    .type-business .business-title {font-size:14px;padding-left:10px}
+    .type-business .business-tit {font-size:14px}
+    .type-business .business-tit + .business-text {margin-top:15px}
+    .type-business .business-text {font-size:13px}
+    .type-business .business-img .img-item {width:100% !important;float:none;text-align:center}
+    .type-business .business-img .img-item ~ .img-item {margin:10px 0 0 0}
+    .type-business .img-with-txt .img-area.type-right,
+    .type-business .img-with-txt .img-area {width:100%;text-align:center}
+
+    .text-infos {padding-left:13px;text-indent:-13px;text-align:left}
+
+    /* 소다수나눔 캠페인 */
+    .section-donation-how {padding:10px 25px}
+    .donation-how-inner {margin-top:30px}
+    .donation-how-list {margin:20px 0 0}
+    .donation-how-inner .list-donation:nth-child(n) {margin-left:0}
+    .pause-donation {margin-top:30px}
+
+    /* 기부금 영수증 신청 */
+    .receipt-apply-list {padding:30px 0 20px}
+    .list-item-apply {width:50%;min-height:160px}
+    .list-item-apply:nth-child(3):before {display:none}
+    .list-item-apply span {margin-top:4px}
+
+    /* 대관 */
+    .coronation-info {padding-top:0}
+    .coronation-info .img-with-txt ~ .img-with-txt {margin-top:30px}
+    .text-with-btn {margin-top:40px}
+    .text-with-btn {padding:20px 0}
+    .text-with-btn .text-with-col {display:block}
+    .text-with-btn .text-with-col.btn-col {width:100%;padding:10px 0 0 0}
+    .coronation-info .coronation-txt,
+    .coronation-info .coronation-dl {margin-top:15px}
+    .coronation-info .coronation-txt ~ .coronation-dl,
+    .coronation-info .coronation-dl ~ .coronation-dl {margin-top:10px}
+    .coronation-dl .coronation-content {font-size:13px}
+
+    .mgt-xxxl {margin-top:30px !important}
+
+    /* 결제완료 */
+    .payment-tit {font-size:24px;line-height:28px}
+    .payment-sub-text {line-height:28px}
+    .base-body.type-bg .table-tit {margin:28px 0 14px}
+
+    /* ars */
+    .ars-area {padding:30px 0 0 0;}
+    .ars-area .ars-list {margin-top:20px;}
+    .ars-area .ars-list .ars-item {display:block;padding-left:70px}
+    .ars-area [class*="ico-ars"] {width:50px;height:50px;}
+    .ars-area .ars-list .ars-item ~ .ars-item {margin:20px 0 0 0;}
+
+
+}
+
+@media (max-width:460px) {
+    /**/
+    .base-body.type-bg {padding:30px 20px}
+    .base-body.type-sub .base-main {padding:25px 15px 32px}
+
+    .sub-visual {height:130px}
+    .sub-title-area {padding-top:35px}
+    .heading-title-a {font-size:26px}
+
+    .contents-hd {margin:25px 0}
+    .contents-hd h3 strong {font-size:20px}
+    .contents-menu-nav {display:none}
+    .mobile-block-mini {display:block}
+    .title-sub-txt {margin-top:6px;line-height:20px;font-size:14px}
+    .contents-tab {margin-top:20px}
+
+    /* table */
+    /* .tb-type_a th, .tb-type_a td,
+    .tb-type_b th, .tb-type_b td {padding:12px 10px} */
+
+    /* paging */
+    .paging-area .paging-item {min-width:30px;height:30px;line-height:28px}
+    .paging-area .paging-item ~ .paging-item {margin-left:4px}
+    .paging-area .paging-item.type-img-prev {margin-right:4px}
+    .paging-area .paging-item.type-img-next {margin-left:8px}
+
+    .gallery-list.type-person li {float:left}
+    .gallery-list.type-person li:nth-child(4n+1) {clear:right}
+    .gallery-list.type-person li:nth-child(2n+1) {clear:both}
+    .gallery-list.type-person li {width:48.5%;margin-right:3%}
+    .gallery-list.type-person li:nth-child(4n) {margin-right:3%}
+    .gallery-list.type-person li:nth-child(2n) {margin-right:0}
+
+    /* btn */
+    .btn-area {margin-top:20px}
+
+    /* 기부 */
+    .donation-guide-item:after {display:none}
+
+    /* 인사말 */
+    .greeting-area {padding:30px 0 0}
+    .greeting-area .owner-info {float:none;width:100%}
+    .greeting-area .owner-photo {width:180px;margin:0 auto}
+    .greeting-area .owner-greeting {padding:30px 0 0 }
+
+    /* ci */
+    .ci-area .heading-title-b {margin-top:25px}
+    .ci-area .ci-imgbox {margin-top:10px}
+    .color-box {margin-top:10px}
+    .color-box .color-box-col {float:none !important;width:100%}
+    .ci-area .color-box .ci-imgbox {margin-top:0}
+    .color-box .color-box-col ~ .color-box-col {margin-top:15px}
+
+    /* sb contents */
+    .sb-contents-tit {font-size:16px}
+    .sb-contents-desc {margin-top:10px;padding-bottom:10px}
+    .ps-box >span {width:calc(33% - 14px)}
+    .sb-content-tbl {margin-bottom:15px}
+
+    /* 아너소사이어티 */
+    .area-type-a.type2 {padding:35px 0 50px}
+    .donation-section .table-tit {margin:35px 0 14px}
+    .donation-section .table-tit ~ .table-tit {margin:32px 0 14px}
+    .donation-member-list li {display:block}
+    .donation-member-list li ~ li {margin-top:30px}
+    .donation-desc li, .donation-desc.type2 li p {line-height:20px}
+    .donation-desc li:before, .donation-desc.type2 li p:before {top:7px}
+
+    /* 희망자산나눔 */
+    .donation-find-area {display:none}
+
+    /* 사회공헌 현물기부 */
+    .area-type-a .area-type-tit2.type2, .area-type-a .area-type-tit2.type2 strong {font-size:16px}
+    .area-type-a .area-type-tit2.type2 strong {margin-top:0}
+
+    /* 착한가게 */
+    .benefit-desc-box {margin-top:15px}
+    .benefit-desc-title {font-size:15px}
+
+    /* 기부내역 조회 */
+    .donation-info {display:block;margin-bottom:30px}
+    .donation-box {display:block;padding:25px 10px 18px}
+    .donation-box ~ .donation-box:after {left:50%;top:4px;margin-top:0;margin-left:-27px;width:54px;height:1px}
+    .donation-box:before {display:none}
+
+    .data-info-a {padding:20px 10px}
+    .data-info-b {padding:20px 0}
+    .data-info-b .ico-tel {display:block}
+    .data-info-b .data-info-txt ~ .data-info-txt {margin-top:10px}
+
+    /* 대관 */
+    .coronation-box_tb .coronation-box-col span,
+    .coronation-box_tb .coronation-box-col {font-size:14px}
+    .coronation-box_tb .coronation-box-col span {display:block;margin:3px 0 0 0}
+
+    /* error */
+    .error-area {padding:0 30px}
+    .error-area .icon-error {width:45px;height:45px}
+    .error-area .error-title {margin-top:25px;font-size:20px}
+    .error-area .error-txt {margin-top:15px}
+
+    /* sitemap */
+    .sitemap-section {padding-bottom:30px}
+    .sitemap-section .sitemap-section-item {float:none;width:100%}
+    .sitemap-section .sitemap-section-item ~ .sitemap-section-item {margin-top:30px;border-top:1px solid #d4d4d4;padding-top:30px}
+
+    /* 결제완료 */
+    .payment-tit .text-line-mobile {display:inline-block;margin-right:4px}
+    .payment-tit {font-size:20px;line-height:24px}
+    .payment-sub-text {margin-top:8px;line-height:18px}
+    
+    
+    /* wing */
+    .box-wing {position:fixed;right:16px;top:70px;width:144px;height:384px;background:url(/common/img/common/wing_bg_1912.png) no-repeat 0 0;z-index:20;}
+
+
+
+}
+
+@media (max-width:360px) {
+    .tab-desc {margin:18px 0 30px}
+    .table-tit {font-size:14px}
+    .tb-type_a th, .tb-type_a td {font-size:13px}
+    .ui-tab-type2 .ui-tab-btns button {min-height:38px}
+
+    /* table */
+    /* .tb-type_a th, .tb-type_a td {padding:10px 8px} */
+
+
+    /* credit card, ars */
+    .donate-list {padding:15px 10px 12px}
+    .donate-tit {margin-bottom:12px;font-size:13px}
+    .donate-list-item .item-txt {margin:7px 0 0;max-height:inherit;min-height:70px}
+    .donate-list-item p {font-size:12px;line-height:14px}
+    .donate-list-item strong {font-size:13px}
+    .donate-list-item i {width:32px;height:34px;background-size:32px auto}
+    .donate-desc {margin-top:15px}
+
+    .point-card-list li {margin-top:25px;min-height:330px;max-height:330px}
+    .select-sub-tit {font-size:16px}
+    .point-card-tit {font-size:16px;margin-bottom:10px}
+    .point-card-list button.btn-base-imp.small {position:absolute;bottom:0;left:0;margin:0}
+
+    /* 아너소사이어티 */
+    .donation-article .btn-area button {font-size:14px}
+    .donation-desc.type2 li, .donation-desc.type2 p {display:block}
+
+    /* 유산기부 */
+    .partici-list li, .partici-use .partici-txt,
+    .legacy-list li dt, .legacy-list li dd {font-size:12px;line-height:18px}
+    .legacy-list li dl {margin-top:10px}
+    .legacy-list li dd {margin-top:8px}
+
+    /* 나의 기부 설계 */
+    .mydonation-find img {width:50%}
+    .text-mydonation {line-height:20px}
+    .text-mydonation-info, .text-donation-name {font-size:16px}
+    .box-mydonation-result {margin-top:25px}
+    .text-donation-name {text-align:center}
+    .box-mydonation .btn-area button {font-size:14px}
+}
+
+
+@media (max-width:320px) {
+    .contents-hd h3 strong {font-size:22px;line-height:34px}
+    .contents-tab {margin-top:12px}
+
+    /* paging */
+    .paging-area .paging-item {min-width:28px;height:28px;line-height:26px;padding:0 2px;font-size:12px}
+    .paging-area .paging-item ~ .paging-item {margin-left:2px}
+    .paging-area .paging-item.type-img-prev {margin-right:2px}
+    .paging-area .paging-item.type-img-next {margin-left:4px}
+
+    .ui-tab-type2 .ui-tab-btns button {font-size:12px}
+    .tb-type_c th, .tb-type_c td {padding:15px 10px}
+    .col-w01, .col-w02 {width:65px}
+
+    .split-info [class^="split-inner-"] {font-size:12px}
+    [class*="btn-base"] {font-size:14px}
+}
