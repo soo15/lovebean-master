@@ -14,13 +14,24 @@
 
     <title>사회복지공동모금회 사랑의열매</title>
 
-	<link rel="stylesheet" href="/common/css/ui.base.css">
+	<link rel="stylesheet" href="../../common/css/ui.base.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<script src="/common/js/ui.global.js"></script>
-	<script src="/common/js/ui.plugins.js"></script>
-	<script src="/common/js/ui.common.js"></script>
+	<script src="../../common/js/ui.global.js"></script>
+	<script src="../../common/js/ui.plugins.js"></script>
+	<script src="../../common/js/ui.common.js"></script>
+	<style>
+		.btn_test{
+			position:fixed;
+			left:50%;
+			bottom:0;
+			transform: translateX(-50%);
+			width: 700px;
+			border: 1px solid black;
+			z-index:999;
+		}
+	</style>
 
 </head>
 
@@ -686,6 +697,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="btn_test">버튼</div>
 			</main>
 		</div>
 		
@@ -712,8 +724,30 @@
 					$('#directDebitAddCert .addcert').hide();
 					$('#directDebitAddCert .addcert.n' + $(this).val()).show();
 				});
-				
-            });
+
+				$(window).resize(resizeContents);
+				resizeContents();
+
+			});
+			
+
+			function resizeContents() {
+			var btnTest = $('.btn_test').outerHeight();
+				var s = $(btnTest).scrollTop(),
+				var	d = $wrapper.height();
+				var scrollPercent = (s / d);
+			var baseBody = $('.base-body').height();
+			var footer = $('.base-footer').height();
+			console.log(scrollPercent);
+			console.log(btnTest);
+			console.log(baseBody);
+			console.log(footer);
+
+			
+
+			}
+
+
         })(jQuery, window, document);
 	</script>
 </body>
