@@ -26,6 +26,7 @@
 			position:fixed;
 			left:50%;
 			bottom:0;
+			margin-bottom:8px;
 			transform: translateX(-50%);
 			width: 700px;
 			border: 1px solid black;
@@ -726,22 +727,40 @@
 				});
 
 				$(window).resize(resizeContents);
+				$(window).scroll(resizeContents);
 				resizeContents();
 
 			});
 			
 
 			function resizeContents() {
-			var btnTest = $('.btn_test').outerHeight();
-				var s = $(btnTest).scrollTop(),
-				var	d = $wrapper.height();
-				var scrollPercent = (s / d);
-			var baseBody = $('.base-body').height();
-			var footer = $('.base-footer').height();
-			console.log(scrollPercent);
-			console.log(btnTest);
-			console.log(baseBody);
-			console.log(footer);
+			var btnTest = $('.btn_test');
+			var baseBody = $('.base-body').innerHeight();
+			var footer = $('.base-footer').innerHeight();
+			var bodyH = $(window).scrollTop();
+			
+
+			
+			// console.log(btnTest);
+			// console.log(baseBody);
+			// console.log(footer);
+			// console.log(bodyH);
+
+			var a = bodyH  + footer + 1000;
+			var b = baseBody ;
+			
+			console.log(a);
+			console.log(b);
+
+			if(a > b){
+				$('.btn_test').css({"position": "absolute", "font-size": "20px"})
+			}else{
+				$('.btn_test').css({"position": "fixed", "font-size": "20px"})
+			}
+
+			// if($(baseBody).scrollTop() > 100) {
+			// 	console.log('hello');
+			// }
 
 			
 
